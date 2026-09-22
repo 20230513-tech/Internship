@@ -15,6 +15,20 @@ h2, p {
     margin: 10px;
 }
 
+header {
+    position: relative;
+    z-index: 2;
+}
+
+.site-title {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,8 +45,9 @@ ul li a {
     display: block;
     color: #0000B0;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 150px;
     text-decoration: none;
+    
 }
 
 ul li a:hover {
@@ -43,3 +58,34 @@ section {
     height: 160vh;
     background-color: #f2f2f2;
 }
+
+
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+
+    background-image: url('assets/images/ancient-greece.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+
+}
+
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 45px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+
+}
+ 
