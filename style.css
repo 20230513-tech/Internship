@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #009DC4;
+    --color-secondary: #F2F2F2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin:0;
@@ -12,7 +20,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #009DC4;
+    background-color: var(--color-primary);
 }
 
 ul li {
@@ -31,3 +39,7 @@ ul li a:hover {
     background-color: white;
 }
 
+section {
+    height: 160vh;
+    background-color: #f2f2f2;
+}
