@@ -542,7 +542,7 @@ img {
     font-size: 24px;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 550px;
+    margin-top: 300px;
 }
 
 .fun-video h2 {
@@ -558,6 +558,19 @@ img {
     height: auto;
     max-width: 90%; 
     display:block;
+    margin: 0 auto;
+}
+
+.map-of-greece {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.map-of-greece img {
+    display: block;
+    width: min(700px 100%);
+    height:auto;
     margin: 0 auto;
 }
 
