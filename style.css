@@ -6,13 +6,13 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
 }
 
 body {
     margin:0;
     padding:0;
-    background-color: #F0F8FF ;
+    background-color: #fffaf0 ;
 }
 h2, p {
     margin: 10px;
@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 section {
     height: 100vh;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
 }
 
 
@@ -123,21 +123,27 @@ section {
 }
 
 .why-greece {
-     height: auto;
+    display: flex;
+    height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
     
 }
 
 
 .why-greece h2 {
+    flex: 0 0 100%;
     font-size: 32px;
     color: darkblue;
     margin-bottom: 10px;
 }
 .why-greek {
-    float: left;
+    background-color:#F2F2F2;
+    float: none;
     position: relative;
     padding: 25px;
     border-radius: 15px;
@@ -159,8 +165,8 @@ section {
 }
 
 .greek-quote {
-    margin-left: 50px;
-    float: center;
+    background-color: #F2F2F2;
+    float: none;
     position: relative;
     padding: 25px;
     border-radius: 15px;
@@ -298,14 +304,14 @@ img {
     gap: 30px;
     padding: 60px 40px;
     height: auto;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
 }
 
 .discover {
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
     
 }
 .discover h2 {
@@ -331,7 +337,9 @@ img {
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
+    margin-left: 250px;
+    
 }
 
 .fun-facts h2{
@@ -432,19 +440,19 @@ img {
 
 .glance {
 
-    margin-top: 200px;
+    margin-top: 60px;
     float: center;
     height: auto;
     text-align: center;
     padding: 50px 20px;
-    background-color: #F0F8FF;
+    background-color: #fffaf0;
 }
 
 .glance h2 {
     font-size: 32px;
     color: darkblue;
     margin-bottom: 10px;
-    text-transform: uppercase;
+    
 }
 
 .glance  p {
@@ -462,7 +470,7 @@ img {
 }
 
 .glance-card {
-    background-color: #fffaf0;
+    background-color: white;
     border: 1px solid var(--color-gold);
     border-radius: 20px;
     padding: 25px 15px;
@@ -487,9 +495,30 @@ img {
 }
 
 .fun-video {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    order:3;
+    flex: 0 0 100%;
+    
+    margin: 100px 0 0;
+    padding: 50px 20px;
+    color: darkblue;
+    font-size: 24px;
+    text-align: center;
+}
+
+.fun-video h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.fun-video video {
+    width: 540px;
+    height: auto;
+    max-width: 90%; 
+    display:block;
+    margin: 0 auto;
 }
 
 
