@@ -208,9 +208,10 @@ section {
 }
 
 img {
-    margin-left: 350px;
     max-width: 100%;
-    height: auto;
+    border-radius: 23px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -310,8 +311,6 @@ img {
 }
 
 .content {
-    max-width: 1180px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 30px;
