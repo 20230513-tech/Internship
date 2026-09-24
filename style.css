@@ -6,13 +6,13 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #fffaf0;
+    background-color: #F2F2F2;
 }
 
 body {
     margin:0;
     padding:0;
-    background-color: #fffaf0 ;
+    background-color: #f2f2f2 ;
 }
 h2, p {
     margin: 10px;
@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 section {
     height: 100vh;
-    background-color: #fffaf0;
+    background-color: #f2f2f2;
 }
 
 
@@ -127,7 +127,7 @@ section {
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #fffaf0;
+    background-color: #f2f2f2;
     flex-wrap: wrap;
     align-items: stretch;
     gap: 30px;
@@ -241,7 +241,7 @@ img {
 }
 
 .flip-card-front {
-  background-color: #fffaf0;
+  background-color: white;
   color: darkblue;
   border-radius: 50px;
   align-items: center;
@@ -304,14 +304,14 @@ img {
     gap: 30px;
     padding: 60px 40px;
     height: auto;
-    background-color: #fffaf0;
+    background-color: #f2f2f2;
 }
 
 .discover {
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #fffaf0;
+    background-color: #f2f2f2;
     
 }
 .discover h2 {
@@ -331,13 +331,15 @@ img {
     margin-top: 54px;
 }
 
+
+
 .fun-facts {
     margin-top: 100px;   
     float:left;
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
-    background-color: #fffaf0;
+    background-color: #f2f2f2;
     margin-left: 250px;
     
 }
@@ -350,7 +352,7 @@ img {
 }
 
 .olympics {
-    background-color: #fffaf0;
+    background-color: white;
     padding: 25px;
     border-radius: 15px;
     border: 1px solid #d4af37;
@@ -383,7 +385,7 @@ img {
 }
 
 .socrates {
-    background-color: #fffaf0;
+    background-color: white;
     padding: 25px;
     border-radius: 15px;
     border: 1px solid #d4af37;
@@ -411,7 +413,7 @@ img {
 }
 
 .alarm-clock {
-    background-color: #fffaf0;
+    background-color: white;
     padding: 25px;
     border-radius: 15px;
     border: 1px solid #d4af37;
@@ -439,23 +441,38 @@ img {
 }
 
 .glance {
-
-    margin-top: 60px;
-    float: center;
+    margin-top: 200px;   
+    float:none;
     height: auto;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fffaf0;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    margin-left: 250px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
-.glance h2 {
+.full-glance {
+    background-color: #F1E3A4;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    width: 700px;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+    
+}
+
+.full-glance h2 {
     font-size: 32px;
     color: darkblue;
     margin-bottom: 10px;
     
 }
 
-.glance  p {
+.full-glance  p {
     font-size: 18px;
     color: #555;
     margin-bottom: 35px;
@@ -495,14 +512,16 @@ img {
 }
 
 .fun-video {
-    order:3;
+    clear: both;
     flex: 0 0 100%;
-    
-    margin: 100px 0 0;
+    width: 100%;
+    margin: 80px 0 0;
     padding: 50px 20px;
     color: darkblue;
     font-size: 24px;
     text-align: center;
+    box-sizing: border-box;
+    margin-top: 550px;
 }
 
 .fun-video h2 {
