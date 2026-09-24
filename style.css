@@ -10,7 +10,15 @@
     --terracotta: #a85d3a;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: #F2F2F2;
 }
@@ -199,7 +207,7 @@ section {
 .greek-quote h3 {
     font-size: 24px;
     color: var(--color-gold);
-    margin-top: 54px;
+    
 }
 
 .greek-quote p {
