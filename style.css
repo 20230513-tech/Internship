@@ -24,11 +24,13 @@ header {
 }
 
 nav {
+    height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--color-primary);
     justify-content: space-between;
     padding: 5px 30px;
+    border-bottom: 4px solid var(--color-gold);
 }
 
 .logo img{
@@ -41,8 +43,9 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
     gap: 10px;
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -57,10 +60,11 @@ nav ul li a {
     padding: 12px 20px;
     border-radius: 10px;
     display: block;
-    color: #0000B0;
+    color: darkblue;
     text-align: center;
-    padding: 16px 130px;
+    padding: 12px 20px;
     text-decoration: none;
+    transition: 0.3s;
     
 }
 
