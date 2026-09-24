@@ -569,9 +569,12 @@ img {
 
 .map-of-greece img {
     display: block;
-    width: min(700px 100%);
+    width: min(500px 90%);
     height:auto;
     margin: 0 auto;
+    object-fit: contain;
+    max-height: 400px;
+    
 }
 
 
