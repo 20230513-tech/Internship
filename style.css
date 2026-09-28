@@ -356,12 +356,11 @@ img {
 .fun-facts {
     max-width: 1200px;
     margin: 0 auto;   
-    float:left;
-    height: auto;
-    text-align: center;
+    float:none;
     padding: 60px 24px;
     background-color: #f2f2f2;
-    margin-left: 250px;
+    text-align: center;
+   
     
 }
 
@@ -378,7 +377,8 @@ img {
     border-radius: 15px;
     border: 1px solid #d4af37;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-    width: 300px;
+    width: 700px;
+    height: 200px;
     margin: 30px auto;
     transition: transform 0.3s ease;
 }
@@ -401,6 +401,7 @@ img {
 }
 
 .olympics p {
+    margin-top: 35px;
     font-size: 18px;
     color: #555;
 }
@@ -411,7 +412,8 @@ img {
     border-radius: 15px;
     border: 1px solid #d4af37;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-    width: 300px;
+    width: 700px;
+    height: 200px;
     margin: 30px auto;
     transition: transform 0.3s ease;
 }
@@ -429,6 +431,7 @@ img {
 }
 
 .socrates p {
+    margin-top: 35px;
     font-size: 18px;
     color: #555;
 }
@@ -439,7 +442,8 @@ img {
     border-radius: 15px;
     border: 1px solid #d4af37;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-    width: 300px;
+    width: 700px;
+    height: 200px;
     margin: 30px auto;
     transition: transform 0.3s ease;
 }
@@ -457,21 +461,17 @@ img {
 }
 
 .alarm-clock p {
+    margin-top: 35px;
     font-size: 18px;
     color: #555;
 }
 
 .glance {
-    margin-top: 200px;   
-    float:none;
-    height: auto;
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f2f2f2;
-    margin-left: 250px;
     width: 100%;
-    box-sizing: border-box;
-
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
 }
 
 .full-glance {
@@ -483,6 +483,7 @@ img {
     width: 700px;
     margin: 30px auto;
     transition: transform 0.3s ease;
+    margin-bottom: 50px;
     
 }
 
@@ -532,17 +533,25 @@ img {
     margin: 0;
 }
 
-.fun-video {
+.media-section {
     clear: both;
-    flex: 0 0 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
     width: 100%;
-    margin: 80px 0 0;
-    padding: 50px 20px;
-    color: darkblue;
-    font-size: 24px;
+    max-width: 1200px;
+    margin: 70px auto 0;
+    padding: 70px 24px;
+    align-items: center;
+}
+
+.fun-video {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
-    box-sizing: border-box;
-    margin-top: 300px;
+    
 }
 
 .fun-video h2 {
@@ -554,27 +563,40 @@ img {
 }
 
 .fun-video video {
-    width: 540px;
+    display: block;
+    width: 100%;
     height: auto;
-    max-width: 90%; 
-    display:block;
     margin: 0 auto;
 }
 
 .map-of-greece {
     width: 100%;
-    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
+}
+.map-of-greece h2 {
+     margin: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
 }
 
 .map-of-greece img {
     display: block;
-    width: min(500px 90%);
-    height:auto;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    object-fit: contain;
-    max-height: 400px;
     
+}
+
+@media (max-width: 750px) {
+    .media-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 }
 
 
