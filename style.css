@@ -95,7 +95,6 @@ section {
     background-color: #f2f2f2;
 }
 
-
 .hero {
     height: 500px;
     display: flex;
@@ -125,6 +124,21 @@ section {
     padding: 0 0 40px 60px;
 }
 
+.hero-bronze {
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/bronzeag.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+
+}
+
 .hero-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
@@ -137,6 +151,17 @@ section {
 }
 
 .hero-greece-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.hero-bronze-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
     border-left: 6px solid var(--color-gold);
@@ -161,6 +186,13 @@ section {
 
 }
 
+.hero-bronze-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
 .hero-text p {
     margin: 0;
     padding: 1px;
@@ -173,6 +205,17 @@ section {
 }
 
 .hero-greece-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-bronze-text p {
     margin: 0;
     padding: 1px;
     font-size: 17px;
@@ -532,6 +575,18 @@ footer,
     
 }
 
+.topics .full-glance {
+    width: min(700px, 100%);
+}
+
+.topics .full-glance h2 {
+    text-align: center;
+}
+
+.topics .full-glance p {
+    text-align: center;
+}
+
 .full-glance h2 {
     font-size: 32px;
     color: darkblue;
@@ -551,6 +606,13 @@ footer,
     grid-template-columns: repeat(3, 200px);
     justify-content: center;
     gap: 25px;
+}
+
+.topics .glance-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 425px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .glance-card {
