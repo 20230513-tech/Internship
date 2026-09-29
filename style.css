@@ -396,13 +396,7 @@ img {
     transform: scale(1.05);
     
 }
-footer,
-.footer {
-    background-color: var(--color-primary);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+
 
 .content,
 .three-periods {
@@ -412,6 +406,86 @@ footer,
     padding: 60px 40px;
     height: auto;
     background-color: #f2f2f2;
+}
+
+.bronze-topics-title {
+    height: auto;
+    text-align: left;
+    padding: 40px 20px 10px;
+    background-color: #f2f2f2;
+    
+}
+
+.topics-title-choose {
+     height: auto;
+    text-align: left;
+    padding: 40px 20px 10px;
+    background-color: #f2f2f2;  
+}
+.topics-title-choose h2 {
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.topics-title-choose h3 {
+    margin-left: 150px;
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.bronze-topics-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+    align-items: start;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.topics-selection {
+    display: grid;
+    grid-template-columns: minmax(0, min(460px, 100%));
+    justify-content: start;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.topic-box {
+    display: flex;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 28px 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    color: darkblue;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.topic-box:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.topic-box h2 {
+    margin: 0;
+}
+
+.topic-box-action {
+    color: var(--color-primary);
+    font-weight: bold;
 }
 .time-period,
 .discover {
@@ -562,7 +636,8 @@ footer,
     background-color: #f2f2f2;
 }
 
-.full-glance {
+.full-glance,
+.full-collection {
     background-color: #F1E3A4;
     padding: 25px;
     border-radius: 15px;
@@ -573,6 +648,13 @@ footer,
     transition: transform 0.3s ease;
     margin-bottom: 50px;
     
+}
+
+.bronze-collection .full-collection {
+    width: min(700px, 100%);
+}
+.full-collection h2 {
+    text-align: center;
 }
 
 .topics .full-glance {
@@ -587,25 +669,35 @@ footer,
     text-align: center;
 }
 
-.full-glance h2 {
+.full-glance h2,
+.full-collection h2 {
     font-size: 32px;
     color: darkblue;
     margin-bottom: 10px;
     
 }
 
-.full-glance  p {
+.full-glance p,
+.full-collection p {
     font-size: 18px;
     color: #555;
     margin-bottom: 35px;
 }
 
-.glance-container {
+.glance-container,
+.collection-container {
     
     display: grid;
     grid-template-columns: repeat(3, 200px);
     justify-content: center;
     gap: 25px;
+}
+
+.bronze-collection .collection-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 425px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .topics .glance-container {
@@ -615,7 +707,8 @@ footer,
     margin: 0 auto;
 }
 
-.glance-card {
+.glance-card,
+.collection-card {
     background-color: white;
     border: 1px solid var(--color-gold);
     border-radius: 20px;
@@ -624,17 +717,28 @@ footer,
     transition: 0.3s ease;
 }
 
-.glance-card:hover {
+.glance-card:hover,
+.collection-card:hover {
     transform: translateY(-8px);
     box-shadow:0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
-.glance-icon {
+.glance-icon,
+.collection-icon {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-.glance-card h3 {
+.bronze-collection .collection-icon img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.glance-card h3,
+.collection-card h3 {
     color: var(--color-gold);
     font-size: 20px;
     margin: 0;
@@ -704,6 +808,21 @@ footer,
         grid-template-columns: 1fr;
         gap: 50px;
     }
+
+    .bronze-topics-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .topics-selection {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .topics-selection {
+        grid-template-columns: 1fr;
+    }
 }
 
 .image-section img {
@@ -711,6 +830,14 @@ footer,
     height: 800px;
 }
 
+
+footer,
+.footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
 
 
