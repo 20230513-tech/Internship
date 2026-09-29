@@ -142,10 +142,10 @@ section {
     justify-content: flex-start;
     text-align: left;
     border-bottom: 4px solid var(--color-gold);
-    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/brnzbg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/brbg.jpg');
     /* background-repeat: no-repeat; */
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
     padding: 0 0 40px 60px;
 
