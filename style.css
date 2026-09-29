@@ -874,7 +874,7 @@ img {
 
 .image-section img {
     width: cover;
-    height: 800px;
+    height: 1000px;
 }
 
 
@@ -956,6 +956,8 @@ footer,
     background: white;
     border-left: 4px solid var(--color-primary);
 }
+
+
 
 .timeline-list li::before {
     content: "";
