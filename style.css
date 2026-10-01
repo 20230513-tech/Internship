@@ -149,6 +149,22 @@ section {
 
 }
 
+.hero-dailylife {
+     height: 550px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/bronzedaily.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
 .hero-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
@@ -182,6 +198,17 @@ section {
     max-width: 600px;
 }
 
+.hero-life-text {
+     max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
 .hero-text h1 {
     margin: 0;
     padding: 20px;
@@ -201,6 +228,12 @@ section {
     padding: 20px;
     font-size: 40px;
 
+}
+
+.hero-life-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
 }
 
 .hero-text p {
@@ -227,6 +260,17 @@ section {
 
 .hero-bronze-text p {
     margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-life-text p {
+      margin: 0;
     padding: 1px;
     font-size: 17px;
     text-align: left;
@@ -465,6 +509,27 @@ img {
     /* padding: 60px 0; */
 }
 
+.topic-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: minmax(0, min(460px, 100%));
+    justify-content: start;
+    gap: 20px;
+    /* padding: 60px 0; */
+}
+
+.topics-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
 .topic-box {
     display: flex;
     min-height: 150px;
@@ -483,7 +548,30 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.topic-info-box {
+    display: flex;
+    min-height: 175px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 32px 28px;
+    border: 1px solid rgba(201, 162, 39, 0.75);
+    border-radius: 20px;
+    background-color: rgba(23, 43, 58, 0.86);
+    box-shadow: 0 8px 24px rgba(23, 43, 58, 0.25);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
 .topic-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.topic-info-box:hover {
     transform: translateY(-8px);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
@@ -493,11 +581,64 @@ img {
     outline-offset: 4px;
 }
 
+.topic-info-box summary:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
 .topic-box h2 {
     margin: 0;
 }
 
+.topic-info-box h2 {
+    margin: 0;
+}
+
+.topic-info-box summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+}
+
+.topic-info-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.topic-info-box p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.topic-info-content {
+    width: 100%;
+    text-align: left;
+}
+
+.topic-info-content h4 {
+    color: var(--color-gold);
+}
+
+.topic-info-box[open] {
+    justify-content: flex-start;
+}
+
+.topic-info-box[open] .topic-info-action span {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+    
+
 .topic-box-action {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.topic-info-action {
     color: var(--color-primary);
     font-weight: bold;
 }
@@ -858,11 +999,23 @@ img {
     .topics-selection {
         padding: 40px 0;
     }
+
+    .topics-info {
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 800px) {
 .bronze-collection .full-collection {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .topics-info {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        padding: 40px 20px;
     }
 }
 
