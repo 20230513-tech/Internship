@@ -29,7 +29,7 @@ html {
 body {
     margin:0;
     padding:0;
-    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/prettyback.jpg');
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/decor.jpg');
     width: 100%;
     height: 100%;
     font-family: "Lato", sans-serif;
@@ -792,9 +792,8 @@ img {
     margin: 0;
     padding: 40px 20px;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/ancientgreecebg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/decor.jpg');
+   
 }
 
 .full-glance,
@@ -924,6 +923,7 @@ img {
     clear: both;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/ancientgreecebg.jpg');
     gap: 40px;
     width: 100%;
     max-width: 1200px;
