@@ -29,7 +29,7 @@ html {
 body {
     margin:0;
     padding:0;
-    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/ancientgreecebg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/backgroundgreece.jpg');
     width: 100%;
     height: 100%;
     font-family: "Lato", sans-serif;
