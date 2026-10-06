@@ -137,7 +137,7 @@ section {
 }
 
 .hero-bronze {
-       height: 550px;
+    height: 550px;
     /* width: 100%;*/
     display: flex;
     align-items: flex-end;
@@ -152,6 +152,8 @@ section {
     padding: 0 0 40px 60px;
 
 }
+
+    
 
 .hero-dailylife {
      height: 550px;
@@ -535,6 +537,7 @@ img {
     padding-block: 20px 100px;
 }
 
+
 .topics-selection {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -856,7 +859,7 @@ img {
     width: 100%;
 } */
 
-.bronze-collection .full-collection {
+ .bronze-collection .full-collection {
     /* width: min(700px, 100%); */
     width: 700px;
 }
@@ -901,17 +904,23 @@ img {
     gap: 25px;
 }
 
-.bronze-collection .collection-container {
+.bronze-collection .collection-container,
+ .collection-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 425px;
     width: 100%;
     margin: 0 auto;
 }
 
-.bronze-collection {
+
+
+.bronze-collection
+ {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+
 
 .topics .glance-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -949,6 +958,7 @@ img {
     object-fit: cover;
     border-radius: 12px;
 }
+
 
 .glance-card h3,
 .collection-card h3 {
@@ -1036,9 +1046,14 @@ img {
         grid-row: 3/4;
     }
 
-    .bronze-collection .full-collection {
+    
+
+    .bronze-collection .full-collection,
+     .full-collection {
         width: 100%;
     }
+
+    
 
     .topics-selection {
         padding: 40px 0;
@@ -1050,9 +1065,12 @@ img {
 }
 
 @media (max-width: 800px) {
-.bronze-collection .full-collection {
+.bronze-collection .full-collection,
+ .full-collection {
         width: 100%;
     }
+
+    
 }
 
 @media (max-width: 600px) {
@@ -1148,7 +1166,7 @@ footer,
     margin: 30px auto;
     transition: transform 0.3s ease;
 }
-.agamemnon:hover {
+.agamemnon:hover:hover {
     transform: translateY(-8px);
     box-shadow:0 18px 35px rgba(0, 0, 0, 0.25);
 }
