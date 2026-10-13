@@ -203,6 +203,22 @@ section {
     padding: 0 0 40px 60px;
 }
 
+.hero-entertainment-classic {
+    height: 700px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/classicentertainment.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
 .hero-temple {
      height: 700px;
     /* width: 100%;*/
@@ -212,6 +228,22 @@ section {
     text-align: left;
     border-bottom: 4px solid var(--color-gold);
     background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/templebronze.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
+.hero-temple-classic {
+    height: 700px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/parthenonclassic.jpg');
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
@@ -301,8 +333,30 @@ section {
     max-width: 600px;
 }
 
+.hero-entertainment-classic-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
 .hero-temple-text {
      max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.hero-temple-classic-text {
+    max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
     border-left: 6px solid var(--color-gold);
     
@@ -362,7 +416,19 @@ section {
     font-size: 40px;
 }
 
+.hero-entertainment-classic-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
 .hero-temple-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.hero-temple-classic-text h1 {
     margin: 0;
     padding: 20px;
     font-size: 40px;
@@ -385,6 +451,16 @@ section {
     font-family: cursive;
 }
 
+.hero-entertainment-classic-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
 .hero-greece-text p {
     margin: 0;
     padding: 1px;
@@ -441,6 +517,17 @@ section {
 }
 
 .hero-temple-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-temple-classic-text p {
     margin: 0;
     padding: 1px;
     font-size: 17px;
@@ -1380,7 +1467,7 @@ footer,
     min-height: 50vh;
     margin: 0;
     padding: 70px;
-    background-color: rgba(0, 0, 0, 0.9 );
+    background-color: #D4C5A9;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 
@@ -1446,11 +1533,33 @@ footer,
     text-align: center;
 }
 
+.entertainment-info-classic {
+    display: grid;
+    /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: none;
+    min-height: 20vh;
+    margin: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .entertainment-info h2 {
     margin: 0;
     color: var(--color-gold);
     text-align: center;
     
+}
+
+.entertainment-info-classic h2 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
 }
 
 .entertainment-text {
@@ -1483,6 +1592,45 @@ footer,
     border-radius: 12px;
     margin-bottom: 40px;
     
+}
+
+#Musiccl {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+#Theatre {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+#Sportscl {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 12px;
+    margin-bottom: 40px;
 }
 
 .temples {
@@ -1569,10 +1717,13 @@ footer,
     margin-bottom: 40px;
 }
 
+
 #Music, #Dance, #Sports {
     width: min(100% - 32px, 1000px);
     margin: 0 auto 40px;
 }
+
+
 
 .temples, .palace, .architecture {
     width: min(100% - 32px, 1000px);
@@ -1585,6 +1736,14 @@ footer,
 }
 
 .image-dance img {
+    display: block;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/*Fix*/
+.image-theatre img {
     display: block;
     width: 300px;
     height: 250px;
@@ -1609,6 +1768,61 @@ footer,
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.image-musiccl img {
+    display: block;
+    width: 700px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-theatre img {
+    display: block;
+    width: 700px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-sportscl {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+   /* border-radius: 8px;*/
+}
+
+#Musiccl .image-musiccl {
+    margin-left: clamp(20px, 6vw, 90px);
+}
+
+#Theatre .image-theatre {
+    margin-left: clamp(20px, 6vw, 90px);
+}
+
+#Sportscl .image-sportscl {
+    width: min(calc(100% - 32px), 1000px);
+    max-width: 1000px;
+}
+
+@media (max-width: 1199px) {
+    #Musiccl .image-musiccl {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    #Theatre .image-theatre {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    #Sportscl .image-sportscl {
+        margin-left: 0;
+    }
 }
 
 .image-temple img {
@@ -1661,6 +1875,20 @@ footer,
     flex: 0 0 300px;
 }
 
+.image-musiccl {
+    flex: 0 0 600px;
+}
+
+.image-theatre {
+    flex: 0 0 600px;
+}
+
+.image-sportscl {
+    flex: 0 0 600px;
+}
+
+
+
 .image-temple, .image-palace, .image-architecture {
     flex: 0 0 300px;
 }
@@ -1674,6 +1902,19 @@ footer,
 .music-text {
     flex: 1;
 }
+
+.musiccl-text {
+    flex: 1;
+}
+
+.theatre-text {
+    flex: 1;
+}
+
+.sports-classic-text {
+    flex: 1;
+}
+
 
 .temples-text {
     flex: 1;
@@ -1703,6 +1944,8 @@ footer,
     font-size: 30px;
     
 }
+
+
 
 .temples-text h2 {
     text-align: center;
@@ -1756,6 +1999,48 @@ footer,
     font-family: "Lato", sans-serif;
     font-size: 18px;
     color: #555;
+}
+
+.musiccl-text p {
+    font-family: "Lato", sans-serif;
+    max-width: 75ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
+.theatre-text p {
+    font-family: "Lato", sans-serif;
+    max-width: 75ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
+.sports-classic-text h3 {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 3px;
+    font-family:var(--ff-primary);
+    color: rgba(0,0,0,0.5);
+    font-size: 23px;
+}
+
+.sports-classic-text p {
+    font-family: "Lato", sans-serif;
+    max-width: 75ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
 }
 
 .temples-text p {
@@ -1857,12 +2142,42 @@ footer,
 
    
 
+   
+
     .image-music img {
         width: 100%;
     }
 
     
+
+    
 }
+
+/*Add More of the entertainment Classic here*/
+@media (max-width: 1192px) {
+    #Musiccl, #Theatre, #Sportscl {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+   .image-musiccl, .image-theatre, .image-sportscl {
+    flex-basis: auto;
+   }
+
+   
+
+    .image-musiccl img, .image-theatre img, .image-sportscl img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+
+    
+
+    
+}
+
+
 
 @media (max-width: 760px) {
     .temples {
@@ -2218,7 +2533,40 @@ footer,
 
 }
 
+.temple-text-classic {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    /* background-color: var(--color-gold); */
+    gap: 12px;
+    position:relative;
+    overflow: hidden;
+}
+
+.classic-ent-text {
+   /* text-align: center;*/
+    padding: 0 20px;
+    margin-top: 20px;
+    /* background-color: var(--color-gold); */
+    gap: 12px;
+    position:relative;
+    overflow: hidden;
+}
+
 .art-text {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(assets/images/bgartsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.temple-classic-text {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
@@ -2235,6 +2583,12 @@ footer,
     grid-column: 1;
 }
 
+.temple-copy-left {
+    grid-column: 1;
+}
+
+
+
 .art-copy-left p {
     font-family: "Lato", sans-serif;
     max-width: 80ch;
@@ -2247,6 +2601,29 @@ footer,
     position: relative;
 }
 
+.temple-copy-left h2 {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 3px;
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.temple-copy-left p {
+    font-family: "Lato", sans-serif;
+    max-width: 80ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    color: black;
+    font-weight: italic;
+    font-size: 17px;
+    z-index: 1;
+    position: relative;
+    padding-left: 20px;
+}
+
 .art-text-img-center {
     grid-column: 2;
     width: min(280px, 25vw);
@@ -2254,7 +2631,18 @@ footer,
     object-fit: contain;
 }
 
+.temple-text-img-center {
+    grid-column: 2;
+    width: min(280px, 25vw);
+    height: auto;
+    object-fit: contain;
+}
+
 .art-copy-right {
+    grid-column: 3;
+}
+
+.temple-copy-right {
     grid-column: 3;
 }
 
@@ -2266,6 +2654,28 @@ footer,
     line-height: 1.3;
     color:black;
     font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+.temple-copy-right h2 {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 3px;
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.temple-copy-right p {
+    font-family: "Lato", sans-serif;
+    max-width: 80ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    color:black;
+    font-weight: italic;
+    font-size: 17px;
     z-index: 1;
     position: relative;
 }
@@ -2282,6 +2692,23 @@ footer,
     }
 
     .art-text-img-center {
+        width: min(280px, 80vw);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .temple-classic-text {
+        grid-template-columns: 1fr;
+    }
+
+    .temple-copy-left,
+    .temple-text-img-center,
+    .temple-copy-right {
+        grid-column: 1;
+    }
+
+    .temple-text-img-center {
         width: min(280px, 80vw);
         justify-self: center;
     }
@@ -2306,7 +2733,35 @@ footer,
     color: #444;
 }
 
-.temple-text-content p {
+.temple-text-content-classic {
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+    background-color: #EAD4B3;
+    background-image: url('/assets/images/templebackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #444;
+}
+
+.classic-ent-text-content {
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+    background-color: #EAD4B3;
+    background-image: url('/assets/images/templebackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #444;
+}
+
+
+.temple-text-content p,
+.classic-ent-text-content p {
     font-family: "Lato", sans-serif;
     max-width: 75ch;
     margin-inline: auto;
@@ -2332,6 +2787,17 @@ footer,
     }
 }
 
+.cariatis-text-img-left,
+.cariats-text-img-right {
+    position: absolute;
+    width: 500px;
+    z-index: 0;
+
+    @media (width <= 1672px) {
+        display: none;
+    }
+}
+
 
 
 .temple-text-img-left{
@@ -2339,8 +2805,18 @@ footer,
     top: 0;
 }
 
+.cariats-text-img-left {
+    left: -100px;
+    top: 0;
+}
+
 .temple-text-img-right{
     right: -100px;
+    top:0;
+}
+
+.cariats-text-img-right {
+    right: -1px;
     top:0;
 }
 
@@ -2493,4 +2969,23 @@ footer,
     height: 50px;
 } */
 
+@media (max-width: 600px) {
+    .hero-entertainment-classic {
+        padding: 0 16px 24px;
+    }
 
+    .hero-entertainment-classic-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-entertainment-classic-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-entertainment-classic-text p {
+        margin-left: 0;
+    }
+}
