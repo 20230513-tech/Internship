@@ -3076,19 +3076,75 @@ footer,
     margin: 0 auto 40px;
 }
 
-.tragedy-comedy {
+.tragedy {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3 , minmax(0, 1fr));
     gap: 20px;
     align-items: start;
 }
 
-.tragedy-comedy > h2 {
+.comedy {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.epic-poetry {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.tragedy > h2 {
     grid-column: 1 / -1;
 }
 
+.comedy > h2 {
+    grid-column: 1 / -1;
+}
+
+.epic-poetry > h2 {
+    grid-column: 1 / -1;
+}
+
+.tragedy h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 25px;
+}
+
+.comedy h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 25px;
+}
+
+.epic-poetry h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 25px;
+}
+
 .Aeschylus,
-.Sophocles {
+.Sophocles,
+.Euripides,
+.Aristophanes,
+.Menander,
+.Homer,
+.Hesiod {
     width: 100%;
     min-width: 0;
     margin: 0;
@@ -3096,7 +3152,12 @@ footer,
 }
 
 .Aeschylus img,
-.Sophocles img {
+.Sophocles img,
+.Euripides img,
+.Aristophanes img,
+.Menander img,
+.Homer img,
+.Hesiod img {
     display: block;
     width: min(100%, 220px);
     height: 160px;
@@ -3105,8 +3166,49 @@ footer,
     border-radius: 8px;
 }
 
+.Aeschylus:hover,
+.Sophocles:hover,
+.Euripides:hover,
+.Aristophanes:hover,
+.Menander:hover,
+.Homer:hover,
+.Hesiod:hover {
+    transform: translateY(-8px);
+    box-shadow:0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.Aeschylus h2,
+.Sophocles h2,
+.Euripides h2,
+.Aristophanes h2,
+.Menander h2,
+.Homer h2,
+.Hesiod h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: black;
+    font-size: 15px;
+}
+
+.Aeschylus p,
+.Sophocles p,
+.Euripides p {
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+
+    z-index: 1;
+    position: relative;
+}
+
 @media (max-width: 700px) {
-    .tragedy-comedy {
+    .tragedy,
+    .comedy,
+    .epic-poetry {
         grid-template-columns: 1fr;
     }
 }
