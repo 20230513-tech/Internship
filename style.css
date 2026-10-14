@@ -3213,6 +3213,215 @@ footer,
     }
 }
 
+.Aeschylus-info,
+.Sophocles-info,
+.Euripides-info,
+.Aristophanes-info {
+    padding-top: 40px;
+}
+
+
+.Aeschylus-bio,
+.Sophocles-bio,
+.Euripides-bio,
+.Aristophanes-bio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    /*width: 80%;*/
+    height: auto;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+   width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+.Aeschylus-bio h2,
+.Sophocles-bio h2,
+.Euripides-bio h2,
+.Aristophanes-bio h2 {
+    padding-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.Aeschylus-bio p,
+.Sophocles-bio p,
+.Euripides-bio p,
+.Aristophanes-bio p {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.Aeschylus-bio img,
+.Sophocles-bio img,
+.Euripides-bio img,
+.Aristophanes-bio img {
+    display: block;
+    width: min(100%, 400px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.Aeschylus-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Sophocles-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Euripides-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Aristophanes-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Aeschylus-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Sophocles-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Euripides-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Aristophanes-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .Aeschylus-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Sophocles-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Euripides-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Aristophanes-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+.button-back {
+    display: flex;
+    justify-content: flex-end;
+    width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+.back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: var(--navy);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+.back:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.back:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .button-back {
+        justify-content: center;
+    }
+
+    .back {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 /* dummy css */
 /* .parent {
     height: 200px;
