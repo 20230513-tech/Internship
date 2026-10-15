@@ -1593,6 +1593,23 @@ footer,
     text-align: center;
 }
 
+.philosophy-info {
+    display: grid;
+    /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: none;
+    min-height: 20vh;
+    margin: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
 .entertainment-info h2 {
     margin: 0;
     color: var(--color-gold);
@@ -1602,6 +1619,13 @@ footer,
 
 .entertainment-info-classic h2 {
     margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+.philosophy-info h2 {
+    margin: 0;
+    font-size: 30px;
     color: var(--color-gold);
     text-align: center;
 }
@@ -1623,6 +1647,7 @@ footer,
     color: #555;
     
 }
+
 
 
 #Music {
@@ -3298,12 +3323,26 @@ footer,
     margin: 0 auto 40px;
 }
 
+.philosophers {
+    width: min(calc(100% - 32px), 1000px);
+    margin: 0 auto 40px;
+}
+
 .tragedy {
     display: grid;
     grid-template-columns: repeat(3 , minmax(0, 1fr));
     gap: 20px;
     align-items: start;
 }
+
+.philosopher-names {
+    display: grid;
+    grid-template-columns: repeat(5 , minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+
 
 .comedy {
     padding-top: 10px;
@@ -3324,7 +3363,9 @@ footer,
 .tragedy > h2 {
     grid-column: 1 / -1;
 }
-
+.philosopher-names > h2 {
+    grid-column: 1 / -1;
+}
 .comedy > h2 {
     grid-column: 1 / -1;
 }
@@ -3334,6 +3375,15 @@ footer,
 }
 
 .tragedy h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 25px;
+}
+
+.philosopher-names h2 {
     text-align: center;
     padding: 0 20px;
     /*margin-top: 3px;*/
@@ -3373,6 +3423,22 @@ footer,
     padding: 16px;
 }
 
+.Socrates,
+.Plato,
+.Aristotle,
+.Thales,
+.Empedocles,
+.Democritus,
+.Heraclitus,
+.Pythagoras,
+.Anaxagoras,
+.Epicurus {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+}
+
 .Aeschylus img,
 .Sophocles img,
 .Euripides img,
@@ -3380,6 +3446,24 @@ footer,
 .Menander img,
 .Homer img,
 .Hesiod img {
+    display: block;
+    width: min(100%, 220px);
+    height: 160px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.Socrates img,
+.Plato img,
+.Aristotle img,
+.Thales img,
+.Empedocles img,
+.Democritus img,
+.Heraclitus img,
+.Pythagoras img,
+.Anaxagoras img,
+.Epicurus img {
     display: block;
     width: min(100%, 220px);
     height: 160px;
@@ -3399,6 +3483,20 @@ footer,
     box-shadow:0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
+.Socrates:hover,
+.Plato:hover,
+.Aristotle:hover,
+.Thales:hover,
+.Empedocles:hover,
+.Democritus:hover,
+.Heraclitus:hover,
+.Pythagoras:hover,
+.Anaxagoras:hover,
+.Epicurus:hover {
+    transform: translateY(-8px);
+    box-shadow:0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
 .Aeschylus h2,
 .Sophocles h2,
 .Euripides h2,
@@ -3414,9 +3512,52 @@ footer,
     font-size: 15px;
 }
 
+.Socrates h2,
+.Plato h2,
+.Aristotle h2,
+.Thales h2,
+.Empedocles h2,
+.Democritus h2, 
+.Heraclitus h2,
+.Pythagoras h2,
+.Anaxagoras h2,
+.Epicurus h2 {
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: black;
+    font-size: 15px;
+}
+
 .Aeschylus p,
 .Sophocles p,
-.Euripides p {
+.Euripides p,
+.Aristophanes p,
+.Menander p,
+.Homer p,
+.Hesiod p 
+{
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+
+    z-index: 1;
+    position: relative;
+}
+
+.Socrates p,
+.Plato p,
+.Aristotle p,
+.Thales p,
+.Empedocles p,
+.Democritus p,
+.Heraclitus p,
+.Pythagoras p,
+.Anaxagoras p,
+.Epicurus p {
     font-family: "Lato", sans-serif;
     max-width: 65ch;
     margin-inline: auto;
@@ -3435,6 +3576,12 @@ footer,
     }
 }
 
+@media (max-width: 700px) {
+    .philosopher-names {
+        grid-template-columns: 1fr;
+    }
+}
+
 .Aeschylus-info,
 .Sophocles-info,
 .Euripides-info,
@@ -3445,6 +3592,100 @@ footer,
     padding-top: 40px;
 }
 
+.Socrates-info,
+.Plato-info,
+.Aristotle-info,
+.Thales-info,
+.Empedocles-info,
+.Democritus-info,
+.Heraclitus-info,
+.Pythagoras-info,
+.Anaxagoras-info,
+.Epicurus-info {
+    padding-top: 40px;
+}
+
+
+.Socrates-bio,
+.Plato-bio,
+.Aristotle-bio,
+.Thales-bio,
+.Empedocles-bio,
+.Democritus-bio,
+.Heraclitus-bio,
+.Pythagoras-bio,
+.Anaxagoras-bio,
+.Epicurus-bio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    /*width: 80%;*/
+    height: auto;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+   width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+.Socrates-bio h2,
+.Plato-bio h2,
+.Aristotle-bio h2,
+.Thales-bio h2,
+.Empedocles-bio h2,
+.Democritus-bio h2,
+.Heraclitus-bio h2,
+.Pythagoras-bio h2,
+.Anaxagoras-bio h2,
+.Epicurus-bio h2 {
+    padding-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.Socrates-bio p,
+.Plato-bio p,
+.Aristotle-bio p,
+.Thales-bio p,
+.Empedocles-bio p,
+.Democritus-bio p,
+.Heraclitus-bio p,
+.Pythagoras-bio p,
+.Anaxagoras-bio p,
+.Epicurus-bio p {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+.Socrates-bio img,
+.Plato-bio img,
+.Aristotle-bio img,
+.Thales-bio img,
+.Empedocles-bio img,
+.Democritus-bio img,
+.Heraclitus-bio img,
+.Pythagoras-bio img,
+.Anaxagoras-bio img,
+.Epicurus-bio img {
+    display: block;
+    width: min(100%, 400px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
 
 .Aeschylus-bio,
 .Sophocles-bio,
@@ -3499,6 +3740,7 @@ footer,
     z-index: 1;
     position: relative;
 }
+
 
 
 .Aeschylus-bio img,
@@ -3806,6 +4048,21 @@ footer,
     left: -12px;
     border-right: 12px solid var(--color-gold);
 }
+
+.text-philosophys{
+    flex: 1;
+}
+.text-philosophys p{
+    font-family: "Lato", sans-serif;
+    max-width: 100ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
 /* dummy css */
 /* .parent {
     height: 200px;
