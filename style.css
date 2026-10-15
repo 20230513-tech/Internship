@@ -267,6 +267,22 @@ section {
     padding: 0 0 40px 60px;
 }
 
+.hero-philosophy {
+    height: 700px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/philosophers.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
 .hero-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
@@ -377,6 +393,17 @@ section {
     max-width: 600px;
 }
 
+.hero-philosophy-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
 .hero-text h1 {
     margin: 0;
     padding: 20px;
@@ -435,6 +462,12 @@ section {
 }
 
 .hero-art-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.hero-philosophy-text h1 {
     margin: 0;
     padding: 20px;
     font-size: 40px;
@@ -539,6 +572,17 @@ section {
 }
 
 .hero-art-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-philosophy-text p {
     margin: 0;
     padding: 1px;
     font-size: 17px;
@@ -2860,6 +2904,19 @@ footer,
     border: 2px solid var(--color-gold);
 }
 
+.philosophy-text {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(assets/images/bgartsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--color-gold);
+}
+
 .art-copy-left {
     grid-column: 1;
 }
@@ -2991,6 +3048,24 @@ footer,
     }
 
     .temple-text-img-center {
+        width: min(280px, 80vw);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 1425px) {
+    .philosophy-text {
+        padding-top: 130px;
+        grid-template-columns: 1fr;
+    }
+
+    .philosophy-copy-left,
+    .philosophers-text-img-center,
+    .philosophy-copy-right {
+        grid-column: 1;
+    }
+
+    .philosophers-text-img-center {
         width: min(280px, 80vw);
         justify-self: center;
     }
@@ -3692,6 +3767,45 @@ footer,
     color: var(--color-gold);
     font-size: 30px;
 }
+
+.philosophy-copy {
+    position: relative;
+    width: min(100%, 540px);
+    padding: 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 20px;
+    background: wheat;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.philosophy-copy-left {
+    justify-self: start;
+}
+
+.philosophy-copy-right {
+    justify-self: end;
+}
+
+.philosophy-copy::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    transform: translateY(-50%);
+}
+
+.philosophy-copy-left::after {
+    right: -12px;
+    border-left: 12px solid var(--color-gold);
+}
+
+.philosophy-copy-right::after {
+    left: -12px;
+    border-right: 12px solid var(--color-gold);
+}
 /* dummy css */
 /* .parent {
     height: 200px;
@@ -3763,6 +3877,27 @@ footer,
     }
 
     .hero-temple-classic-text p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-philosophy {
+        padding: 0 16px 24px;
+    }
+
+    .hero-philosophy-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-philosophy-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-philosophy-text p {
         margin-left: 0;
     }
 }
