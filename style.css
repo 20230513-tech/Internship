@@ -3216,7 +3216,10 @@ footer,
 .Aeschylus-info,
 .Sophocles-info,
 .Euripides-info,
-.Aristophanes-info {
+.Aristophanes-info,
+.Menander-info,
+.Homer-info,
+.Hesiod-info {
     padding-top: 40px;
 }
 
@@ -3224,7 +3227,10 @@ footer,
 .Aeschylus-bio,
 .Sophocles-bio,
 .Euripides-bio,
-.Aristophanes-bio {
+.Aristophanes-bio,
+.Menander-bio,
+.Homer-bio,
+.Hesiod-bio {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
@@ -3241,7 +3247,10 @@ footer,
 .Aeschylus-bio h2,
 .Sophocles-bio h2,
 .Euripides-bio h2,
-.Aristophanes-bio h2 {
+.Aristophanes-bio h2,
+.Menander-bio h2,
+.Homer-bio h2,
+.Hesiod-bio h2 {
     padding-top: 20px;
     text-align: center;
     padding: 0 20px;
@@ -3254,7 +3263,10 @@ footer,
 .Aeschylus-bio p,
 .Sophocles-bio p,
 .Euripides-bio p,
-.Aristophanes-bio p {
+.Aristophanes-bio p,
+.Menander-bio p,
+.Homer-bio p,
+.Hesiod-bio p {
     padding-top: 15px;
     font-family: "Lato", sans-serif;
     max-width: 65ch;
@@ -3270,7 +3282,10 @@ footer,
 .Aeschylus-bio img,
 .Sophocles-bio img,
 .Euripides-bio img,
-.Aristophanes-bio img {
+.Aristophanes-bio img,
+.Menander-bio img,
+.Homer-bio img,
+.Hesiod-bio img {
     display: block;
     width: min(100%, 400px);
     height: auto;
@@ -3307,6 +3322,33 @@ footer,
 }
 
 .Aristophanes-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Menander-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Homer-plays .plays {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.Hesiod-plays .plays {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
@@ -3355,6 +3397,36 @@ footer,
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.Menander-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Homer-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Hesiod-plays .plays li {
+    padding: 14px 16px;
+    background-color: var(--paper);
+    border-left: 4px solid var(--color-gold);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 @media (max-width: 600px) {
     .Aeschylus-plays .plays {
         grid-template-columns: 1fr;
@@ -3375,6 +3447,24 @@ footer,
 
 @media (max-width: 600px) {
     .Aristophanes-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Menander-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Homer-plays .plays {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .Hesiod-plays .plays {
         grid-template-columns: 1fr;
     }
 }
