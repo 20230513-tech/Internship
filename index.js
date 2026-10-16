@@ -41,6 +41,8 @@ for (let name of namesArray) {
 
 
 
+
+
 // const namesArray = ['kostas', 'ermioni'];
 //     person1: 'kostas',
 //     person2: 'ermioni'
