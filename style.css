@@ -283,6 +283,38 @@ section {
     padding: 0 0 40px 60px;
 }
 
+.hero-politics {
+    height: 700px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/politicscla.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
+.hero-history-cl {
+    height: 700px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/classicwar.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
 .hero-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
@@ -404,6 +436,27 @@ section {
     max-width: 600px;
 }
 
+.hero-politics-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+.hero-history-cl-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
 .hero-text h1 {
     margin: 0;
     padding: 20px;
@@ -473,6 +526,17 @@ section {
     font-size: 40px;
 }
 
+.hero-politics-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+.hero-history-cl-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
 .hero-entertainment-text p {
     margin: 0;
     padding: 1px;
@@ -483,6 +547,8 @@ section {
     font-style: italic;
     font-family: cursive;
 }
+
+
 
 .hero-entertainment-classic-text p {
     margin: 0;
@@ -583,6 +649,28 @@ section {
 }
 
 .hero-philosophy-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-politics-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.hero-history-cl-text p {
     margin: 0;
     padding: 1px;
     font-size: 17px;
@@ -1791,9 +1879,139 @@ footer,
     margin-bottom: 40px;
 }
 
+.politics {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    /*border: 1px solid var(--color-gold);*/
+    border-radius: 12px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.political {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    border: 1px solid var(--color-gold);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.political {
+    width: min(100% - 32px, 1000px);
+    margin: 0 auto 40px;
+}
+
+.political-text {
+    flex: 1;
+}
+
+.political-text h2 {
+     text-align: center;
+    padding: 0 20px;
+    margin-top: 3px;
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.political-text p {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+
+@media (max-width: 860px) {
+    .political {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+   
+
+    .image-political img {
+        width: 100%;
+    }
+
+    
+}
+
+.video-section {
+    clear: both;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    background-color:#F2F2F2;
+    gap: 40px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 70px auto 0;
+    padding: 70px 24px;
+    align-items: center;
+
+}
+
+@media (max-width: 1050px) {
+    .video-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    
+}
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.video video {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.democracy, 
+.monarchy,
+.oligarchy,
+.tyranny,
+.public-officials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+    /*border: 1px solid var(--color-gold);*/
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
 
 
 .sculpture-cl .image-sculpture-cl {
+    margin-left: clamp(20px, 6vw, 90px);
+}
+
+.politics .image-politics {
     margin-left: clamp(20px, 6vw, 90px);
 }
 
@@ -1804,6 +2022,24 @@ footer,
 @media (max-width: 1199px) {
     .sculpture-cl .image-sculpture-cl {
         margin-left: 0;
+    }
+}
+@media (max-width: 1199px) {
+    .politics .image-politics {
+        margin-left: 0;
+    }
+    .politics {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    .democracy,
+    .monarchy,
+    .oligarchy,
+    .tyranny,
+    .public-officials  {
+        align-items: center;
     }
 }
 @media (max-width: 1199px) {
@@ -1826,6 +2062,29 @@ footer,
    
 
     .image-sculpture-cl img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+
+    
+
+    
+}
+
+@media (max-width: 1192px) {
+    .politics {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+   .image-politics {
+    flex-basis: auto;
+   }
+
+   
+
+    .image-politics img {
         width: 100%;
         height: auto;
         max-height: 350px;
@@ -1970,6 +2229,14 @@ footer,
     border-radius: 8px;
 }
 
+.image-politics img {
+    display: block;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .image-theatre img {
     display: block;
     width: 700px;
@@ -2098,6 +2365,10 @@ footer,
     flex: 0 0 600px;
 }
 
+.image-politics {
+    flex: 0 0 600px;
+}
+
 .image-art-cl {
     flex: 0 0 600px;
 }
@@ -2138,6 +2409,18 @@ footer,
 
 .sculpture-cl-text,
 .art-text-cl {
+    flex: 1;
+}
+
+.politics-text {
+    flex: 1;
+}
+
+.democracy-text,
+.monarchy-text,
+.oligarchy-text,
+.tyranny-text,
+.public-officials-text {
     flex: 1;
 }
 
@@ -2262,6 +2545,56 @@ footer,
 .sculpture-cl-text p {
     font-family: "Lato", sans-serif;
     max-width: 75ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
+.politics-text p {
+    font-family: "Lato", sans-serif;
+    max-width: 100ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
+.democracy-text p,
+.monarchy-text p,
+.oligarchy-text p,
+.tyranny-text p,
+.public-officials-text p  {
+    font-family: "Lato", sans-serif;
+    max-width: 100ch;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+
+    z-index: 1;
+    position: relative;
+}
+
+.democracy-text h2,
+.monarchy-text h2,
+.oligarchy-text h2,
+.tyranny-text h2,
+.public-officials-text h2 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 32px;
+    /* margin-left: 200px; */
+}
+
+
+.politics-text ul {
+    font-family: "Lato", sans-serif;
+    max-width: 80ch;
     margin-inline: auto;
     letter-spacing: 0.5px;
     line-height: 1.3;
@@ -2791,6 +3124,22 @@ footer,
     border: 2px solid var(--color-gold);
 }
 
+.box-container-politics {
+    
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 2px solid var(--color-gold);
+}
+
+
+
 .box-container-sculpture {
     /* display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2858,6 +3207,21 @@ footer,
     /*margin-left: 200px;*/
 }
 
+.box-container-text-politics h1 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 32px;
+    /*margin-left: 200px;*/
+}
+
+.box-container-text-politics h2 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 32px;
+    /*margin-left: 200px;*/
+}
 .box-container-text-sculpture h2 {
      margin: 0;
     color: var(--color-gold);
@@ -4157,4 +4521,97 @@ footer,
     .hero-philosophy-text p {
         margin-left: 0;
     }
+}
+
+@media (max-width: 600px) {
+    .hero-politics {
+        padding: 0 16px 24px;
+    }
+
+    .hero-politics-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-politics-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-politics-text p {
+        margin-left: 0;
+    }
+}
+
+
+.cont {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.dark {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.cont::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cont img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.cont img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time-right {
+    float: right;
+    color: #999;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.chatbox h2 {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.chatbox {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 40px auto;
+}
+
+.imagery img {
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/ancient-greece.jpg');
+    background-size: cover;
+    background-position: center;
+
+    width: 4000px;
+    height: 1000px;
 }
