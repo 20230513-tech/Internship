@@ -3970,7 +3970,16 @@ footer,
     padding-top: 40px;
 }
 
-.Marathon-info {
+.Marathon-info,
+.Thermopylae-info,
+.Salamis-info,
+.Plataea-info,
+.Plague-info,
+.Sicilian-info,
+.Peloponnesian-info,
+.Corinthian-info,
+.Leuctra-info,
+.Chaeronea-info {
     padding-top: 40px;
 }
 
@@ -3998,7 +4007,16 @@ footer,
     margin: 0 auto 40px;
 }
 
-.Marathon-bio {
+.Marathon-bio,
+.Thermopylae-bio,
+.Salamis-bio,
+.Plataea-bio,
+.Plague-bio,
+.Sicilian-bio,
+.Peloponnesian-bio,
+.Corinthian-bio,
+.Leuctra-bio,
+.Chaeronea-bio {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
@@ -4031,7 +4049,16 @@ footer,
     font-size: 30px;
 }
 
-.Marathon-bio h2 {
+.Marathon-bio h2,
+.Thermopylae-bio h2,
+.Salamis-bio h2,
+.Plataea-bio h2,
+.Plague-bio h2,
+.Sicilian-bio h2,
+.Peloponnesian-bio h2,
+.Corinthian-bio h2,
+.Leuctra-bio h2,
+.Chaeronea-bio h2 {
     padding-top: 20px;
     text-align: center;
     padding: 0 20px;
@@ -4062,7 +4089,16 @@ footer,
     position: relative;
 }
 
-.Marathon-bio p {
+.Marathon-bio p,
+.Thermopylae-bio p,
+.Salamis-bio p,
+.Plataea-bio p,
+.Plague-bio p,
+.Sicilian-bio p,
+.Peloponnesian-bio p,
+.Corinthian-bio p,
+.Leuctra-bio p,
+.Chaeronea-bio p {
     padding-top: 15px;
     font-family: "Lato", sans-serif;
     max-width: 65ch;
@@ -4092,7 +4128,16 @@ footer,
     border-radius: 8px;
 }
 
-.Marathon-bio img {
+.Marathon-bio img,
+.Thermopylae-bio img,
+.Salamis-bio img,
+.Plataea-bio img,
+.Plague-bio img,
+.Sicilian-bio img,
+.Peloponnesian-bio img,
+.Corinthian-bio img,
+.Leuctra-bio img,
+.Chaeronea-bio img {
     display: block;
     width: min(100%, 400px);
     height: auto;
