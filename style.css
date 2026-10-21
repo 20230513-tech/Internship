@@ -3803,6 +3803,7 @@ footer,
     padding: 16px;
 }
 
+
 .Aeschylus img,
 .Sophocles img,
 .Euripides img,
@@ -3969,6 +3970,10 @@ footer,
     padding-top: 40px;
 }
 
+.Marathon-info {
+    padding-top: 40px;
+}
+
 
 .Socrates-bio,
 .Plato-bio,
@@ -3980,6 +3985,20 @@ footer,
 .Pythagoras-bio,
 .Anaxagoras-bio,
 .Epicurus-bio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    /*width: 80%;*/
+    height: auto;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+   width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+.Marathon-bio {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
@@ -4012,6 +4031,16 @@ footer,
     font-size: 30px;
 }
 
+.Marathon-bio h2 {
+    padding-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
 .Socrates-bio p,
 .Plato-bio p,
 .Aristotle-bio p,
@@ -4033,6 +4062,18 @@ footer,
     position: relative;
 }
 
+.Marathon-bio p {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
 .Socrates-bio img,
 .Plato-bio img,
 .Aristotle-bio img,
@@ -4043,6 +4084,15 @@ footer,
 .Pythagoras-bio img,
 .Anaxagoras-bio img,
 .Epicurus-bio img {
+    display: block;
+    width: min(100%, 400px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.Marathon-bio img {
     display: block;
     width: min(100%, 400px);
     height: auto;
@@ -4779,4 +4829,21 @@ footer,
   .timeline-content {
     padding: 15px;
   }
+}
+
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--color-gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: var(--color-gold);
 }

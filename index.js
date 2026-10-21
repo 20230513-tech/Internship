@@ -40,7 +40,7 @@
 //}
 
 
-alert("It is working")
+//alert("It is working")
 
 
 
@@ -48,51 +48,96 @@ alert("It is working")
 const periods = [
   {
     title: "Battle of Marathon",
-    description: "In 490 BCE, the Athenians defeated a Persian army at the Battle of Marathon. This victory became an important moment in Greek history."
+    date: "490 BCE",
+    description: "In 490 BCE, the Athenians defeated a Persian army at the Battle of Marathon. This victory became an important moment in Greek history.",
+    link: "marathon.html",
   },
   {
-    title: "Second event",
-    description: "Write the description of your second historical event here."
+    title: "Battle of Thermopylae",
+    date: "480 BCE",
+    description: "Greek soldiers led by King Leonidas of Sparta resisted the massive Persian army before being defeated after a betrayal revealed a hidden mountain path.",
+    link: "thermopylae.html"
   },
   {
-    title: "Third event",
-    description: "Write the description of your third historical event here."
+    title: "Battle of Salamis",
+    date:"480 BCE",
+    description: "The Greek fleet defeated the much larger Persian navy in a narrow sea passage, becoming a turning point in the Greco-Persian Wars.",
+    link:"salamis.html"
   },
 
   {
-    title: "Fourth event",
-    description: "Write the description of your third historical event here."
+    title: "Battle of Plataea",
+    date:"479 BCE",
+    description: "Greek forces defeated the Persian army, helping bring the Persian invasion of mainland Greece to an end.",
+    link: "plataea.html"
   },
 
   {
-    title: "Fifth event",
-    description: "Write the description of your third historical event here."
+    title: "Plague of Athens",
+    date:"430 - 429 BCE",
+    description: "A devastating epidemic struck Athens during the Peloponnesian War, killing many people, including the influential leader Pericles.",
+    link: "plague-of-athens.html"
   },
    {
-    title: "Sixth event",
-    description: "Write the description of your third historical event here."
+    title: "Sicilian Expedition",
+    date:"415 - 413 BCE",
+    description: "Athens launched a disastrous military campaign against Sicily, suffering enormous losses that weakened its position in the Peloponnesian War.",
+    link:"sicilian-expedition.html"
   },
    {
-    title: "Seventh event",
-    description: "Write the description of your third historical event here."
+    title: "Peloponnesian War",
+    date:"431 - 404 BCE",
+    description: "A prolonged conflict between Athens and Sparta and their allies that ended with Athens' defeat and the decline of its power.",
+    link: "peloponnesian.html"
   },
    {
-    title: "Eighth event",
-    description: "Write the description of your third historical event here."
+    title: "Corinthian War",
+    date:"395 - 386 BCE",
+    description: "Several Greek city-states fought against Sparta, eventually reaching a peace settlement that restored Persian influence over Greek affairs in Asia Minor.",
+    link: "corinthian.html"
   },
+  {
+    title: "Battle of Leuctra",
+    date:"371 BCE",
+    description: "Thebes defeated Sparta using innovative military tactics, ending Sparta's reputation as the dominant military power in Greece.",
+    link:"leuctra.html"
+  },
+  {
+    title: "Battle of Chaeronea",
+    date:"338 BCE",
+    description: "Philip II of Macedon defeated Athens and Thebes, establishing Macedonian dominance over much of Greece and paving the way for Alexander the Great's campaigns.",
+    link:"chaeronea.html"
+  },
+  
 ];
 
 function showPeriod(index) {
+  const period = periods[index];
+
+  // Stop if the selected event does not exist
+  if (!period) {
+    console.error("Timeline event not found:", index);
+    return;
+  }
+
+  // Update the title, date, and description
   document.getElementById("period-title").textContent =
-    periods[index].title;
+    period.title;
+
+  document.getElementById("period-date").textContent =
+    period.date;
 
   document.getElementById("period-description").textContent =
-    periods[index].description;
+    period.description;
 
+  document.getElementById("more-text").href =
+    period.link;
+  // Remove the active class from all timeline buttons
   document.querySelectorAll(".timeline-point").forEach(function(button) {
     button.classList.remove("active");
   });
 
+  // Highlight the selected button
   document.querySelectorAll(".timeline-point")[index]
     .classList.add("active");
 }
