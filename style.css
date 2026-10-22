@@ -331,6 +331,22 @@ section {
     padding: 0 0 40px 60px;
 }
 
+.hero-mythology {
+    height: 800px;
+    /* width: 100%;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 4px solid var(--color-gold);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/godsgr.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 0 40px 60px;
+}
+
 .hero-text {
     max-width: 650px;
     background: rgba(10, 31, 52, 0.72);
@@ -484,6 +500,17 @@ section {
     max-width: 600px;
 }
 
+.hero-mythology-text {
+    max-width: 650px;
+    background: rgba(10, 31, 52, 0.72);
+    border-left: 6px solid var(--color-gold);
+    
+    color: white;
+    padding: 24px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
 .hero-text h1 {
     margin: 0;
     padding: 20px;
@@ -565,6 +592,12 @@ section {
 }
 
 .hero-history-text h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.hero-mythology-text h1 {
     margin: 0;
     padding: 20px;
     font-size: 40px;
@@ -725,6 +758,16 @@ section {
     font-family: cursive;
 }
 
+.hero-mythology-text p {
+    margin: 0;
+    padding: 1px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
 
 .why-greece {
     display: flex;
@@ -3227,6 +3270,14 @@ footer,
 
 }
 
+.box-container h1 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 32px;
+    /*margin-left: 200px;*/
+}
+
 .box-container-palace h2 {
      margin: 0;
     color: var(--color-gold);
@@ -3999,6 +4050,9 @@ footer,
 .Homer-info,
 .Hesiod-info {
     padding-top: 40px;
+    background-image: url(assets/images/beauty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Socrates-info,
@@ -4012,6 +4066,10 @@ footer,
 .Anaxagoras-info,
 .Epicurus-info {
     padding-top: 40px;
+    background-image: url(assets/images/paper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .Marathon-info,
@@ -4025,6 +4083,16 @@ footer,
 .Leuctra-info,
 .Chaeronea-info {
     padding-top: 40px;
+    background-image: url(assets/images/bggr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Troy-info {
+    padding-top: 40px;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -4061,6 +4129,20 @@ footer,
 .Corinthian-bio,
 .Leuctra-bio,
 .Chaeronea-bio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    /*width: 80%;*/
+    height: auto;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+   width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+.Troy-bio {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
@@ -4112,6 +4194,16 @@ footer,
     font-size: 30px;
 }
 
+.Troy-bio h2 {
+    padding-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
 .Socrates-bio p,
 .Plato-bio p,
 .Aristotle-bio p,
@@ -4154,6 +4246,18 @@ footer,
     position: relative;
 }
 
+.Troy-bio p {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+
 .Socrates-bio img,
 .Plato-bio img,
 .Aristotle-bio img,
@@ -4182,6 +4286,15 @@ footer,
 .Corinthian-bio img,
 .Leuctra-bio img,
 .Chaeronea-bio img {
+    display: block;
+    width: min(100%, 400px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.Troy-bio img {
     display: block;
     width: min(100%, 400px);
     height: auto;
@@ -4704,6 +4817,48 @@ footer,
     }
 }
 
+@media (max-width: 600px) {
+    .hero-history {
+        padding: 0 16px 24px;
+    }
+
+    .hero-history-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-history-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-history-text p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-mythology {
+        padding: 0 16px 24px;
+    }
+
+    .hero-mythology-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-mythology-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-mythology-text p {
+        margin-left: 0;
+    }
+}
+
 .cont {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
@@ -4756,7 +4911,7 @@ footer,
     /*margin-top: 3px;*/
     font-family:var(--ff-primary);
     color: var(--color-gold);
-    font-size: 30px;
+    font-size: 30px;                                                    
 }
 
 .chatbox {
@@ -4936,3 +5091,144 @@ footer,
 .read-more:hover {
   background-color: var(--color-gold);
 }
+
+.Gods {
+    background-image: url(assets/images/bgartsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 9px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.Gods,
+.Gods h2,
+.Gods:visited,
+.Gods:hover,
+.Gods:active {
+  color: black; /* Change to the color you want */
+  text-decoration: none;
+}
+
+.gods-row,
+.gods-row h2,
+.gods-row:visited,
+.gods-row:hover,
+.gods-row:active {
+  color: black; /* Change to the color you want */
+  text-decoration: none;
+}
+
+
+.god {
+    width: min(30vw, 300px);
+    text-align: center;
+}
+
+.creature {
+    width: min(30vw, 300px);
+    text-align: center;
+}
+
+.gods {
+    width: min(30vw, 300px);
+    text-align: center;
+}
+
+.god img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.creature img,
+.heros img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.gods-row {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;                                                                                                     
+}  
+
+
+.Creatures
+ {
+  background-image: url(assets/images/bgartsc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px;
+  flex-wrap: wrap;
+}
+
+.Heroes {
+    background-image: url(assets/images/bgartsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 9px;
+    flex-wrap: wrap;
+}
+
+
+.button-god {
+    display: flex;
+    justify-content: flex-end;
+    width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+}
+
+
+
+.gods img,
+.creature img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+@media (max-width: 600px) {
+  .god {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  
+}
+
+
+@media (max-width: 600px) {
+  .creature {
+    gap: 1rem;
+    padding: 1rem;
+    
+  }
+
+  
+}
+
+
+
