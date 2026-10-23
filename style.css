@@ -5230,5 +5230,26 @@ footer,
   
 }
 
+@media (max-width: 560px) {
+  .Gods,
+  .Creatures,
+  .Heroes,
+  .gods-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gods-row {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .god,
+  .gods,
+  .creature,
+  .heros {
+    width: min(90%, 300px);
+  }
+}
 
 
