@@ -5261,6 +5261,37 @@ footer,
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+#funfacts {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border: 2px solid var(--color-gold);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#funfacts h2 {
+    text-align: center;
+    color: var(--color-gold);
+}
+
+#title {
+    margin: 0 0 20px;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+#fact {
+    display: block;
+    max-width: 60ch;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    
+}
+
 #quiz h2 {
     text-align: center;
     color: #333333;
