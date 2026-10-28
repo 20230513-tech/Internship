@@ -5322,3 +5322,130 @@ button:hover {
     background-color: #8f8d8d;
 }
 
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+button{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover{
+  background-color: #38a;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+
+.test {
+    width: min(calc(100% - 32px), 800px);
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--paper);
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
+}
+
+.test .question {
+    margin: 24px 0 12px;
+    color: var(--navy);
+    font-family: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.test .answers {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.test .answers label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    background: var(--white);
+    border: 1px solid #d6dbe0;
+    border-radius: 6px;
+    color: var(--ink);
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.test .answers label:hover {
+    border-color: var(--color-primary);
+}
+
+.test .answers input {
+    flex: 0 0 auto;
+    margin-top: 4px;
+    accent-color: var(--color-primary);
+}
+
+.test #submit {
+    margin: 0;
+    padding: 12px 20px;
+    background: var(--navy);
+    border-radius: 6px;
+    color: var(--white);
+    font-family: var(--ff-primary);
+    font-size: 16px;
+}
+
+.test #submit:hover {
+    background: var(--color-primary);
+}
+
+.test #results {
+    margin-top: 16px;
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .test {
+        padding: 16px;
+    }
+
+    .test .answers {
+        grid-template-columns: 1fr;
+    }
+}
+
