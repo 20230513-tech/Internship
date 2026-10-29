@@ -26,3 +26,98 @@ function stopSlides() {
     clearInterval(timer);
     timer = undefined;
 }
+
+const randFacts = [
+  {
+    title:"The First Olympic Winner Was a Baker",
+    fact: "The first recorded Olympic Games in 776 BCE featured only a single event—a 200-meter foot race (Stadion)—which was won by a cook or baker named Coroebus of Elis"
+  },
+
+  {
+    title: "Bathroom Pebbles",
+    fact: ": Ancient Greeks did not use toilet paper; instead, they cleaned themselves after using the bathroom with small stones (pesoy) or pieces of broken pottery (arraka)."
+  },
+
+  {
+    title:"The First Analog Computer",
+    fact: "Built around 100 BCE and discovered in a shipwreck, the Antikythera Mechanism used a complex system of bronze gears to track astronomical positions and predict eclipses."
+  },
+
+  {
+    title:"Ancient Greeks used to add water to their wine",
+    fact: "Wine was at the core of Ancient Greek culture. There was even a god of wine in the Pantheon, god Dionysus. However, it was considered hubris for mortals to get drunk; a habit suited only to barbarians. It was believed that only god Dionysus could drink wine without water and not get drunk. If the mortal men did not water their wine, there was a danger of them becoming violent and lose their mind"
+  },
+
+  {
+    title:"Ancient Greeks could have been partially colorblind",
+    fact: "Homer, in his famous works Iliad and Odyssey, describes the Mediterranean Sea as 'wine-dark' sea. Have you ever looked at the sea and thought that it was the color of claret? Homer, actually, names only a few color terms and uses the same colors to describe objects that look quite different."
+  },
+
+  {
+    title: "Ancient Greeks were very superstitious",
+    fact: "Ancient Greeks were very wise, but they were also very superstitious. Superstitions played a big part in their everyday life. Some days of each month were considered ominous, so they would avoid important tasks such as sowing or marriage."
+  },
+
+
+]
+
+
+const titleElement = document.getElementById("title");
+const factElement = document.getElementById("fact");
+
+if (titleElement && factElement && randFacts.length > 0) 
+{
+  const randomIndex = Math.floor(Math.random() * randFacts.length);
+  const selectedFact = randFacts[randomIndex];
+
+  titleElement.textContent = selectedFact.title;
+  factElement.textContent = selectedFact.fact;
+}
+
+let city = "";
+let occupations = [
+    
+];
+
+let questions = [
+    {
+        question: "Where would you prefer to live?",
+        options: {
+            a: "Athens",
+            b: "Sparta",
+            c: "Corinth"
+        }
+    },
+
+     {
+        question: "What would you like to do for a living?",
+        options: {
+            a: "Become an artisan",
+            b: "Become a merchant",
+            c: "Become a philosopher or teacher",
+            d: "become a farmer"
+        }
+     },
+
+     {
+        question: "How would you spend your free time?",
+        options: {
+            a: "Attending theatrical performances and enjoying music",
+            b: "Training for athletic competitions",
+            c: "Reading, learning, and discussing philosophical ideas",
+            d: "Exploring new places and discovering different cultures "
+        }
+     },
+
+     {
+        question: "What is your greatest strength?",
+        options: {
+            a: "Creativity - You enjoy making things and expressing yourself",
+            b: "Intelligence - You love solving problems and learning new things",
+            c: "Courage - You face challenges and dont give up easily",
+            d: "Communication - You are good at persuading people and making connections"
+        }
+     },
+     
+
+]
