@@ -5449,3 +5449,8 @@ button:hover{
     }
 }
 
+#slide {
+    width: 100%;
+    height: 1000px;
+    max-width: cover;
+}
