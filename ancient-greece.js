@@ -74,10 +74,7 @@ if (titleElement && factElement && randFacts.length > 0)
   factElement.textContent = selectedFact.fact;
 }
 
-let city = "";
-let occupations = [
-    
-];
+
 
 let questions = [
     {
@@ -118,6 +115,58 @@ let questions = [
             d: "Communication - You are good at persuading people and making connections"
         }
      },
-     
 
-]
+     {
+        question: "What would you most like to buy at the agora?",
+        options: {
+            a: "Beautiful pottery or jewelry",
+            b: "Scrolls, books, or writing materials",
+            c: "Food, olives, bread, and wine",
+            d: "Exotic goods brought by merchants from distant lands"
+        }
+     },
+
+     {
+        question: "Which activity sounds most exiting?",
+        options: {
+            a: "Designing a magnificent temple",
+            b: "Participating in the Olympic Games",
+            c: "Debating an Important question with philosophers",
+            d: "Sailing across the Mediterranean Sea"
+        }
+     },
+
+     {
+        question: "What kind of home would you prefer?",
+        options: {
+            a: "A home in a busy city, close to markets and public life",
+            b: "A quiet home surrounded by farmland and nature",
+            c: "A home near a harbor where ships arrive from distant lands",
+            d: "A simple home where you can focus on training and discipline"
+        }
+     }
+];
+
+let results = [
+    {
+        title: "The Creative Artisan",
+        description: "You would spend your days creating pottery, jewelry, or decorative objects. You appreciate beauty and take pride in your skills. You might sell your work in the agora and become a known craftmanship."
+    },
+
+    {
+        title: "The Adventurous Merchant",
+        description: "You would thrive in a world of ships, marketplaces, and distant ports. You enjoy discovering new places, negotiating prices, and meeting people from different cultures."
+    },
+
+    {
+        title: "The Curious Philosopher",
+        description: "You would spend time questioning the world around you, discussing ideas, and learning from others. Athens might be an especially appealing setting for your intellectual interests."
+    },
+
+    {
+        title: "The Resourceful Farmer",
+        description: "You would help grow crops, care for olive trees, and provide food for your household. Your work would depend on the seasons, the weather, and your knowledge of the land."
+    }
+];
+
+function something() {}
