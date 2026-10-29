@@ -127,11 +127,11 @@ let questions = [
      },
 
      {
-        question: "Which activity sounds most exiting?",
+        question: "Which activity sounds most exciting?",
         options: {
             a: "Designing a magnificent temple",
             b: "Participating in the Olympic Games",
-            c: "Debating an Important question with philosophers",
+            c: "Debating an important question with philosophers",
             d: "Sailing across the Mediterranean Sea"
         }
      },
@@ -150,7 +150,7 @@ let questions = [
 let results = [
     {
         title: "The Creative Artisan",
-        description: "You would spend your days creating pottery, jewelry, or decorative objects. You appreciate beauty and take pride in your skills. You might sell your work in the agora and become a known craftmanship."
+        description: "You would spend your days creating pottery, jewelry, or decorative objects. You appreciate beauty and take pride in your skills. You might sell your work in the agora and become a known craftsperson."
     },
 
     {
@@ -169,4 +169,39 @@ let results = [
     }
 ];
 
-function something() {}
+const questionElement = document.getElementById("questions");
+const optionsElement = document.getElementById("options");
+const resultsElement = document.getElementById("results");
+let currentQuestion = 0;
+function showQuestion() {
+    document.getElementById("question").textContent = questions[currentQuestion].question;
+    let optionsElement = document.getElementById("options");
+    optionsElement.innerHTML = "";
+
+    let answers = questions[currentQuestion].options;
+
+    for (let letter in answers) {
+        let button = document.createElement("button");
+
+        button.textContent = answers[letter];
+
+        optionsElement.appendChild(button);
+    }
+
+    
+
+
+     
+}
+
+function showResults() {
+     let answer = "";
+
+    
+}
+
+
+showQuestion();
+
+
+

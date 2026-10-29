@@ -1207,6 +1207,32 @@ img {
     
 }
 
+.sectionfactscl {
+    width: 100%;
+    max-height: 1000px;
+    max-width: 500px;
+    margin: 0 auto;   
+    float:none;
+    padding: 60px 24px;
+   /* background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/backgroundtemple.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(o, 1fr));
+    align-items: center;
+
+    
+   
+    
+}
+
+#factscl img {
+    width: 200px;
+    height: 200px;
+}
+
 #facts {
     max-width: 500px;
     margin: 0 auto;
@@ -1217,7 +1243,20 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+#factscl {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border: 2px solid var(--color-gold);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 #facts h2 {
+    text-align: center;
+    color: var(--color-gold);
+}
+#factscl h2 {
     text-align: center;
     color: var(--color-gold);
 }
@@ -1231,6 +1270,17 @@ img {
         justify-self: center;
     }
 }
+
+@media (max-width: 760px) {
+    .sectionfactscl {
+        grid-template-columns: 1fr;
+    }
+
+    #factscl {
+        justify-self: center;
+    }
+}
+
 
 .sectionfacts h2 {
     font-size: 32px;
@@ -5322,6 +5372,17 @@ footer,
     background-color: var(--color-gold);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#personalityquiz {
+    /*display: grid;
+    grid-template-columns: 2, minmax(0, 1fr);*/
+    width: min(calc(100% - 32px), 800px);
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--paper);
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
 }
 
 #funfacts {
