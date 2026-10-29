@@ -82,7 +82,7 @@ let questions = [
         options: {
             a: "Athens",
             b: "Sparta",
-            c: "Corinth"
+            c: "Corinth"  
         }
     },
 
