@@ -4,7 +4,14 @@ const images =
     "assets/images/ancientgreekslide.jpg",
     "assets/images/classicgreekslide.jpg",
     "assets/images/deathofsocrates.jpg",
-    "assets/images/phryne.jpg"
+    "assets/images/phryne.jpg",
+    "assets/images/artslideshow.jpg",
+    "assets/images/sculptartslideshow.jpg",
+    "assets/images/schoolartslideshow.jpg",
+    "assets/images/artifactslideshow.jpg",
+    "assets/images/citypaintingslideshow.jpg",
+    "assets/images/philosophersslideshow.jpg",
+    "assets/images/womenslideshow.jpg"
 ];
 
 let index = 0;
@@ -169,9 +176,13 @@ let results = [
     }
 ];
 
+let userAnswers = [];
+
 const questionElement = document.getElementById("questions");
 const optionsElement = document.getElementById("options");
-const resultsElement = document.getElementById("results");
+const resultsElement = document.getElementById("result");
+const nextButton = document.getElementById("nextButton");
+
 let currentQuestion = 0;
 function showQuestion() {
     document.getElementById("question").textContent = questions[currentQuestion].question;
@@ -185,6 +196,20 @@ function showQuestion() {
 
         button.textContent = answers[letter];
 
+        button.setAttribute("aria-pressed", "false");
+
+        button.onclick = function () {
+          userAnswers[currentQuestion] = letter;
+
+          optionsElement.querySelectorAll("button").forEach((option) => {
+            option.classList.remove("selected");
+            option.setAttribute("aria-pressed", "false");
+          });
+
+          button.classList.add("selected");
+          button.setAttribute("aria-pressed", "true");
+        };
+
         optionsElement.appendChild(button);
     }
 
@@ -195,13 +220,35 @@ function showQuestion() {
 }
 
 function showResults() {
-     let answer = "";
+  const resultIndexByAnswer = { a: 0, b: 1, c: 2, d: 3 };
+  const resultIndex = resultIndexByAnswer[userAnswers[1]];
+  const result = results[resultIndex];
 
-    
+  if (!result) return;
+
+  document.getElementById("personalityquiz").style.display = "none";
+  resultsElement.innerHTML =
+    `<h2>${result.title}</h2><p>${result.description}</p>`;
 }
 
+nextButton.addEventListener("click", () => {
+  if (userAnswers[currentQuestion] === undefined) {
+    alert("Please select an answer first.");
+    return;
+  }
+
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    showQuestion();
+  } else {
+    showResults();
+  }
+});
 
 showQuestion();
+
+
+
 
 
 

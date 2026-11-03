@@ -95,23 +95,31 @@
           <div id="fact"></div>
           <!--button id="submit">Submit</!--button-->
         </div>
-      </section>
-
-      <section class="lifeinancienttimes">
-        <div id="personalityquiz">
-          <h2 id="question"></h2>
-          <div id="options"></div>
-          <button id="nextButton">Next</button>
+        <div class="personality-area">
+          <div id="personalityquiz">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <button id="nextButton">Next</button>
+          </div>
+          <div id="result"></div>
         </div>
-        <div id="result"></div>
       </section>
 
-      <p id="imgslide"></p>
-      <img id="slide" src="assets/images/lifeculture.jpeg" alt="Culture Life" />
-      <br />
-      <br />
-      <button onclick="startSlides()">Start</button>
-      <button onclick="stopSlides()">Stop</button>
+      <section class="slideshow" aria-label="Ancient Greece slideshow">
+        <h2>~ Art Gallery ~</h2>
+        <div class="slideshow-frame">
+          <img
+            id="slide"
+            src="assets/images/lifeculture.jpeg"
+            alt="Life and culture in ancient Greece"
+          />
+        </div>
+
+        <div class="slideshow-controls">
+          <button type="button" onclick="startSlides()">Start slideshow</button>
+          <button type="button" onclick="stopSlides()">Stop slideshow</button>
+        </div>
+      </section>
 
       <section class="audio">
         <audio controls autoplay>
