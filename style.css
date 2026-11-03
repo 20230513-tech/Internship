@@ -771,16 +771,28 @@ section {
 
 .why-greece {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     height: auto;
     text-align: center;
     padding: 40px 20px 10px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: 30px;
+    gap: 2%;
     
 }
 
+#why-greece-img{
+    width: 70%;
+    height: auto; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+    
+}
 
 .why-greece h2 {
     flex: 0 0 100%;
@@ -4854,6 +4866,26 @@ footer,
         margin-left: 0;
     }
 }
+@media (max-width: 600px) {
+    .hero {
+        padding: 0 16px 24px;
+    }
+
+    .hero-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        margin-left: 0;
+    }
+}
 
 @media (max-width: 600px) {
     .hero-temple-classic {
@@ -5398,13 +5430,26 @@ footer,
 }
 
 #funfacts {
+    
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color:white;
+    background: linear-gradient(45deg, var(--color-gold), wheat, white);
     border: 2px solid var(--color-gold);
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: move infinite;
+    animation-duration: 3s;
+    gap: 1%;
+    align-items: center;
+    min-height: 200px;
+
+}
+
+@keyframes move {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(0);}
 }
 
 
