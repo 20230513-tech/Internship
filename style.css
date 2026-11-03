@@ -345,6 +345,7 @@ section {
     background-position: center;
     color: white;
     padding: 0 0 40px 60px;
+    
 }
 
 .hero-text {
@@ -356,6 +357,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-greece-text {
@@ -367,6 +369,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-bronze-text {
@@ -378,6 +381,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-life-text {
@@ -389,6 +393,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-life-text-classic {
@@ -399,7 +404,8 @@ section {
     color: white;
     padding: 24px;
     border-radius: 20px;
-    max-width: 600px
+    max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-entertainment-text {
@@ -411,6 +417,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-entertainment-classic-text {
@@ -422,6 +429,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-temple-text {
@@ -433,6 +441,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-temple-classic-text {
@@ -444,6 +453,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-art-text {
@@ -455,6 +465,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-philosophy-text {
@@ -466,6 +477,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-politics-text {
@@ -477,6 +489,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 .hero-history-cl-text {
     max-width: 650px;
@@ -487,6 +500,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-history-text {
@@ -498,6 +512,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-mythology-text {
@@ -509,6 +524,7 @@ section {
     padding: 24px;
     border-radius: 20px;
     max-width: 600px;
+    animation: showh 2s ease;
 }
 
 .hero-text h1 {
@@ -814,6 +830,17 @@ section {
     font-size: 32px;
     color: darkblue;
     margin-bottom: 10px;
+    animation: showh 2s ease;
+}
+@keyframes showh {
+    from {
+        opacity: 0;
+        transform: translateX(-10%) translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px);
+    }
 }
 .why-greek {
     grid-column: 2 / 4; /* spans all columns */
@@ -1246,12 +1273,19 @@ hr {
 
 #facts
  {
-    background: linear-gradient(120deg, wheat, white);
+    background: linear-gradient(120deg,#937449, wheat, white);
     width: 100%;
     max-width: none;
     min-width: 0;
     margin: 0;
+    animation: move infinite;
+    animation-duration: 3s;
 }
+
+
+
+
+
 
 .personality-area {
     width: 100%;
@@ -3377,6 +3411,20 @@ footer,
     border: 2px solid var(--color-gold);
 }
 
+.box-container-vase {
+     width: 100%;
+    max-width: none;
+    /*min-height: 20vh;*/
+    margin: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid var(--color-gold);
+}
 .box-container-politics {
     
     width: 100%;
@@ -3466,6 +3514,20 @@ footer,
     text-align: center;
     font-size: 32px;
     /*margin-left: 200px;*/
+}
+.box-container-vase h2 {
+    margin: 0;
+    color: var(--color-gold);
+    text-align: center;
+    font-size: 32px;
+}
+
+.box-container-vase p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    
+    font-size: 13px;
 }
 
 .box-container-text-politics h1 {
@@ -5492,8 +5554,10 @@ footer,
 }
 
 #title {
+    font-weight: bold;
+    font-size: 20px;
     margin: 0 0 20px;
-    color: var(--color-gold);
+    color: #937449;
     text-align: center;
 }
 
@@ -5789,3 +5853,51 @@ button:hover{
         grid-template-columns: 1fr;
     }
 }
+
+.image-explore {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+}
+
+
+
+
+
+.euphronioskrater-center {
+     display: block;
+    
+    width: 690px;
+    height:352px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-column: 2 / 3;
+}
+.euphronioskrater-back {
+     display: block;
+    
+    width: 690px;
+    height:352px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+
+@media(max-width: 1367px) {
+    .image-explore {
+        grid-template-columns: 1fr;
+    }
+
+    .euphronioskrater-center,
+    .euphronioskrater-back {
+        grid-column: 1;
+        grid-row: auto;
+        width: min(100%, 690px);
+        height: auto;
+    }
+}
+
