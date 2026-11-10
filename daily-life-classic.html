@@ -60,6 +60,147 @@
         </div>
       </section>
 
+      <div class="rows">
+        <div class="columns">
+          <img
+            src="assets/images/delphi.jpg"
+            alt="Delphi"
+            title="Delphi"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(1);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/golden.jpg"
+            alt="Ruins of Golden Age"
+            title="Ruins of Golden Age"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(2);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/leonidas.jpg"
+            alt="Statue of Leonidas"
+            title="Statue of Leonidas"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(3);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/acropoliss.jpg"
+            alt="Acropolis beauty"
+            title="Beautiful image of Acropolis during sunset hours"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(4);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1/4</div>
+            <img
+              src="assets/images/delphi.jpg"
+              title="Delphi"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2/4</div>
+            <img
+              src="assets/images/golden.jpg"
+              title="Ruins of Golden Age"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3/4</div>
+            <img
+              src="assets/images/leonidas.jpg"
+              title="Statue of Leonidas"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4/4</div>
+            <img
+              src="assets/images/acropoliss.jpg"
+              title="Beautiful image of Acropolis during sunset hours"
+              style="width: 100%"
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="columns">
+            <img
+              src="assets/images/delphi.jpg"
+              title="Delphi"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(1)"
+              alt="Delphi"
+            />
+          </div>
+          <div class="columns">
+            <img
+              src="assets/images/golden.jpg"
+              title="Ruins of Golden Age"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(2)"
+              alt="Ruins of Golden Age"
+            />
+          </div>
+
+          <div class="columns">
+            <img
+              src="assets/images/leonidas.jpg"
+              title="Statue of Leonidas"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(3)"
+              alt="Statue of Leonidas"
+            />
+          </div>
+          <div class="columns">
+            <img
+              src="assets/images/acropoliss.jpg"
+              title="Beautiful image of Acropolis during sunset hours"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(4)"
+              alt="Beautiful image of Acropolis during sunset hours"
+            />
+          </div>
+        </div>
+      </div>
+
       <section class="topics-info">
         <details class="topic-info-box">
           <summary>
@@ -960,10 +1101,6 @@
           </div>
         </details>
       </section>
-
-      <section class="imgage-holder">
-        <img src="assets/images/ancientagoragreece.jpg" alt="Classic" />
-      </section>
     </main>
 
     <footer class="footer">
@@ -975,6 +1112,6 @@
       <p>&copy; 2026 Ancient Greece Website. All rights reserved.</p>
     </footer>
 
-    <script src="/index.js"></script>
+    <script src="/daily-life-classic.js"></script>
   </body>
 </html>

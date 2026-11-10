@@ -60,6 +60,147 @@
         </div>
       </section>
 
+      <div class="rows">
+        <div class="columns">
+          <img
+            src="assets/images/dailylifeofbronze.jpg"
+            alt="Daily Life of Bronze"
+            title="Daily Life of Bronze"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(1);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/bronzeageofdaily.jpg"
+            alt="Daily Life of Bronze"
+            title="Ancenstor making leather"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(2);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/bronzeageharvest.jpg"
+            alt="Daily Life of Bronze"
+            title="Ancenstors from Bronze Age harvesting"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(3);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="columns">
+          <img
+            src="assets/images/bronzeagefood.jpg"
+            alt="Daily Life of Bronze"
+            title="Ancenstors of Bronze Age making food"
+            style="width: 100%"
+            onclick="
+              openModal();
+              currentSlide(4);
+            "
+            class="hover-shadow cursor"
+          />
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1/4</div>
+            <img
+              src="assets/images/dailylifeofbronze.jpg"
+              title="Daily Life of Bronze"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2/4</div>
+            <img
+              src="assets/images/bronzeageofdaily.jpg"
+              title="Ancenstor making leather"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3/4</div>
+            <img
+              src="assets/images/bronzeageharvest.jpg"
+              title="Ancenstors from Bronze Age harvesting"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4/4</div>
+            <img
+              src="assets/images/bronzeagefood.jpg"
+              title="Ancenstors of Bronze Age making food"
+              style="width: 100%"
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="columns">
+            <img
+              src="assets/images/dailylifeofbronze.jpg"
+              title="Daily Life of Bronze"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(1)"
+              alt="Daily life of Bronze"
+            />
+          </div>
+          <div class="columns">
+            <img
+              src="assets/images/bronzeageofdaily.jpg"
+              title="Ancenstor making leather"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(2)"
+              alt="Ancenstor making leather"
+            />
+          </div>
+
+          <div class="columns">
+            <img
+              src="assets/images/bronzeageharvest.jpg"
+              title="Ancenstors from Bronze Age harvesting"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(3)"
+              alt="Ancenstors from Bronze Age harvesting"
+            />
+          </div>
+          <div class="columns">
+            <img
+              src="assets/images/bronzeagefood.jpg"
+              title="Ancenstors of Bronze Age making food"
+              style="width: 100%"
+              class="demo cursor"
+              onclick="currentSlide(4)"
+              alt="Ancenstors of Bronze Age making food"
+            />
+          </div>
+        </div>
+      </div>
+
       <section class="topics-info">
         <details class="topic-info-box">
           <summary>
@@ -602,10 +743,6 @@
           </div>
         </details>
       </section>
-
-      <section class="imgage-holder">
-        <img src="assets/images/bronzee.jpg" alt="Bronze" />
-      </section>
     </main>
 
     <footer class="footer">
@@ -617,6 +754,6 @@
       <p>&copy; 2026 Ancient Greece Website. All rights reserved.</p>
     </footer>
 
-    <script src="/index.js"></script>
+    <script src="/daily-life.js"></script>
   </body>
 </html>

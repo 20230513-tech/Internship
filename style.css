@@ -2001,10 +2001,30 @@ footer,
     
 }
 
+.enter-info {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/assets/images/oolivehor.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.enter-info > #Music,
+.enter-info > #Dance,
+.enter-info > #Sports {
+  width: min(90%, 1000px);
+  margin: 0 0 40px;
+}
+
+.enter-info > #Dance {
+  align-self: flex-end;
+}
 
 #Music {
+    background: linear-gradient(90deg, #979e88, #687965, #5a4f31, #342e18);
     display: flex;
+    grid-column: 1/1;
     align-items: center;
     gap: 24px;
     max-width: 1000px;
@@ -2013,6 +2033,8 @@ footer,
     border: 1px solid var(--color-gold);
     border-radius: 12px;
     margin-bottom: 40px;
+   
+    
     
 }
 
@@ -2399,6 +2421,7 @@ footer,
 #Dance {
     display: flex;
     align-items: center;
+    background: linear-gradient(90deg, #b99260, #9c723f, #5a4f31, #342e18);
     gap: 24px;
     max-width: 1000px;
     margin: 0 auto;
@@ -2411,6 +2434,7 @@ footer,
 #Sports {
     display: flex;
     align-items: center;
+    background: linear-gradient(90deg, #F4F0E4, #F5DFBD, #E6D0A9, #687965);
     gap: 24px;
     max-width: 1000px;
     margin: 0 auto;
@@ -2793,7 +2817,7 @@ footer,
     margin-top: 20px;
     font-family: "Lato", sans-serif;
     font-size: 18px;
-    color: #555;
+    color: black;
 }
 
 .musiccl-text p {
@@ -2994,12 +3018,12 @@ footer,
 }
 
 .dance-text p {
-     text-align: center;
+    text-align: center;
     padding: 0 20px;
     margin-top: 20px;
     font-family: "Lato", sans-serif;
     font-size: 18px;
-    color: #555;
+    color: black;
 }
 
 .sports-text {
@@ -4929,6 +4953,26 @@ footer,
     }
 }
 @media (max-width: 600px) {
+    .hero-entertainment {
+        padding: 0 16px 24px;
+    }
+
+    .hero-entertainment-text {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .hero-entertainment-text h1 {
+        padding: 0 0 12px;
+        font-size: 32px;
+    }
+
+    .hero-entertainment-text p {
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
     .hero {
         padding: 0 16px 24px;
     }
@@ -6211,3 +6255,163 @@ button:hover{
     height: auto;
     margin: 40px auto;
 }
+
+
+
+.rows > .columns {
+    padding: 0 8px;
+}
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.columns {
+    float: left;
+    width: 25%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 130px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position:absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.rows .columns img {
+  display: block;
+  width: 100%;
+  height: 200px; /* adjust to taste */
+  object-fit: cover;
+}
+
+.rows {
+    margin-top: 30px;
+}
+
+.modal-content > .columns img.demo {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 853px) {
+    .rows > .columns {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+}
+
+@media (max-width: 330px) {
+    .modal {
+    padding-top: 140px;
+  }
+  
+}
+
