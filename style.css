@@ -39,6 +39,18 @@ body {
     /* font-family: var(--ff-secondary); */
     color: #333;
 }
+
+.mythology {
+    margin:0;
+    padding:0;
+    /* background: linear-gradient(80deg, #F2EbDD, #E8DCC4, #D6C3A3, #C58B68); */
+    background-color: #F8efe6;
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    /* font-family: var(--ff-secondary); */
+    color: #333;
+}
 h1,h2,h3, p {
     margin: 10px;
 }
@@ -6366,44 +6378,177 @@ img.hover-shadow {
     
 }
 
-
-.gods {
-    display: flex;
-    justify-content: space-between;
-    gap:15px;
+.section-titles {
+    
+    color: #142b3a;
+    font-size: 32px;
+    margin: 50px 0 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* border-left: 6px solid #F28C38; */
 }
 
-.card {
-    flex: 1;
+.section-titles::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #c9a46a;
+    margin: 12px auto 0;
+}
+
+.gods {
+    margin-top: 30px;
+    background-color: #F8efe6;
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    padding: 0 16px;
+    gap:15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+}
+
+.creatures {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+   justify-content: center;
+   gap: 15px;
+   /* margin-top: 30px; */
+   padding: 16px;
+   margin-bottom: 20px;
+   background-color: #cedce9;
+   width: 100%;
+}
+
+.heroes {
+    margin-top: 30px;
+    background-color: #F8efe6;
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    padding: 0 16px;
+    gap:15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.card { 
+    width: 150px;
+    height: 175px;
+    overflow: hidden;
     min-width: 0;
-    padding: 13px 13px 16px;
+    padding: 8px;
     margin: 0;
     text-align: center;
-    background-color: white;
-    border: 2px dashed black;
+    background-color: #EFE0CF;
+    border: 2px solid #c9a46a;
     border-radius: 10px;
+    transition: 1s;
+}
+
+.card-creature {
+    width: 250px;
+    height: 175px;
+    overflow: hidden;
+    min-width: 0;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+    background-color: #EFE0CF;
+    border: 2px solid #c9a46a;
+    border-radius: 10px;
+    transition: 1s;
+}
+.card:hover {
+    transform:translateY(-5px) scale(1.1);
+}
+
+.card-creature:hover {
+    transform:translateY(-5px) scale(1.1);
+}
+
+@media (max-width: 760px) {
+    .gods {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 420px) {
+    .gods {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width:320px) {
+    .gods {
+        grid-template-columns:  repeat(1, minmax(0, 1fr));
+        
+    }
+}
+
+@media (max-width: 1016px) {
+    .creatures {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .creatures {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
 }
 
 .card img {
+    display: block;
     width: 100%;
-    max-width: 180px;
-    height: auto;
-    aspect-ratio: 18 / 13;
+    /* max-width: 180px; */
+    height: 135px;
+    /* aspect-ratio: 18 / 13; */
     object-fit: cover;
 
 
 }
 
-.card figcaption strong {
+.card-creature img {
     display: block;
-    font-size: 12px;
-    margin-top: 8px;
-    font-weight: bolder;
-    letter-spacing: 1px;
+    width: 100%;
+    /* max-width: 180px; */
+    height: 135px;
+    /* aspect-ratio: 18 / 13; */
+    object-fit: cover;
 }
-.card figcaption span {
-    display: block;
-    margin-top: 8px;
-    font-size: 11px;
-    color: #999;
+
+.card figcaption {
+    padding: 8px;
+    text-align: center;
+    background-color: #EFE0CF;
+    padding: 10px;
+    
+    
+}
+
+.card-creature figcaption {
+    padding: 8px;
+    text-align: center;
+    background-color: #EFE0CF;
+    padding: 10px;
+}
+
+.card figcaption strong {
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #142b3a;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-creature figcaption strong {
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #142b3a;
+    font-size: 16px;
+    font-weight: bold;
 }
