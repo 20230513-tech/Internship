@@ -17,6 +17,8 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     width: 100%;
     max-width: 100%;
@@ -29,6 +31,7 @@ html {
 body {
     margin:0;
     padding:0;
+    /* background: linear-gradient(80deg, #F2EbDD, #E8DCC4, #D6C3A3, #C58B68); */
     background-color: #F2F2F2;
     width: 100%;
     height: 100%;
@@ -339,7 +342,7 @@ section {
     justify-content: flex-start;
     text-align: left;
     border-bottom: 4px solid var(--color-gold);
-    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/godsgr.jpg');
+    background-image: linear-gradient(rgba(0, 0, 50, 0.25), rgba(0, 0, 50, 0.25)), url('assets/images/myth.jpg');
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
@@ -1576,74 +1579,16 @@ hr {
 
 
 
-.media-section {
-    clear: both;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    background-color:#F2F2F2;
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 70px auto 0;
-    padding: 70px 24px;
-    align-items: center;
-}
 
-.fun-video {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    
-}
 
-.fun-video h2 {
-    margin: 0 0 20px;
-    text-align: center;
-    font-size: 32px;
-    color: darkblue;
-    margin-bottom: 10px;
-}
-
-.fun-video video {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.map-of-greece {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-.map-of-greece h2 {
-     margin: 0 0 20px;
-    text-align: center;
-    font-size: 32px;
-    color: darkblue;
-    margin-bottom: 10px;
-}
-
-.map-of-greece img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    
-}
-
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .media-section {
         grid-template-columns: 1fr;
         gap: 50px;
     }
 
     
-}
+} */
 
 @media (max-width: 1300px) {
     .bronze-topics-layout {
@@ -4275,6 +4220,17 @@ footer,
     background-size: cover;
 }
 
+.Medon-info {
+    padding-top: 40px;
+    background: linear-gradient(130deg, #e8dcc4, #d6c3a3, #c58b68, #233b4d);
+    /* background-image: url(assets/images/beauty.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
 .Socrates-info,
 .Plato-info,
 .Aristotle-info,
@@ -4543,6 +4499,22 @@ footer,
     margin: 0 auto 40px;
 }
 
+.Medon-bio {
+    background-color: #f2ebdd;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px dashed #233b4d;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    /*width: 80%;*/
+    height: auto;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+   width: min(calc(100% - 42px), 1000px);
+    margin: 0 auto 40px;
+    animation: move infinite;
+    animation-duration: 3s;
+}
+
 .Aeschylus-bio h2,
 .Sophocles-bio h2,
 .Euripides-bio h2,
@@ -4557,6 +4529,22 @@ footer,
     font-family:var(--ff-primary);
     color: var(--color-gold);
     font-size: 30px;
+}
+
+.Medon-bio h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+    padding: 0 20px;
+    /*margin-top: 3px;*/
+    font-family:var(--ff-primary);
+    color: var(--color-gold);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    border-bottom: 2px dotted #AA633F;
 }
 
 .Aeschylus-bio p,
@@ -4577,7 +4565,17 @@ footer,
     position: relative;
 }
 
-
+.Medon-bio p {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    max-width: 65ch;
+    margin-inline: auto;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
 
 .Aeschylus-bio img,
 .Sophocles-bio img,
@@ -4592,6 +4590,14 @@ footer,
     object-fit: cover;
     margin: 0 auto;
     border-radius: 8px;
+}
+.Medon-bio img {
+    display: block;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 .Aeschylus-plays .plays {
@@ -5313,174 +5319,7 @@ footer,
   background-color: var(--color-gold);
 }
 
-.Gods {
-    background-image: url(assets/images/bgartsc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-start;
-    gap: 9px;
-    padding: 9px;
-    flex-wrap: wrap;
-}
 
-
-
-
-.Gods,
-.Gods h2,
-.Gods:visited,
-.Gods:hover,
-.Gods:active {
-  color: black; /* Change to the color you want */
-  text-decoration: none;
-}
-
-.gods-row,
-.gods-row h2,
-.gods-row:visited,
-.gods-row:hover,
-.gods-row:active {
-  color: black; /* Change to the color you want */
-  text-decoration: none;
-}
-
-
-.god {
-    width: min(30vw, 300px);
-    text-align: center;
-}
-
-.creature {
-    width: min(30vw, 300px);
-    text-align: center;
-}
-
-.gods {
-    width: min(30vw, 300px);
-    text-align: center;
-}
-
-.god img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  object-position: bottom;
-}
-
-.creature img,
-.heros img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    object-position: bottom;
-}
-
-.gods-row {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 9px;                                                                                                     
-}  
-
-
-.Creatures
- {
-  background-image: url(assets/images/bgartsc.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 9px;
-  padding: 9px;
-  flex-wrap: wrap;
-}
-
-.Heroes {
-    background-image: url(assets/images/bgartsc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 9px;
-    padding: 9px;
-    flex-wrap: wrap;
-}
-
-
-.button-god {
-    display: flex;
-    justify-content: flex-end;
-    width: min(calc(100% - 42px), 1000px);
-    margin: 0 auto 40px;
-}
-
-
-
-.gods img,
-.creature img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  object-position: bottom;
-}
-
-@media (max-width: 600px) {
-  .god {
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  
-}
-
-
-@media (max-width: 600px) {
-  .creature {
-    gap: 1rem;
-    padding: 1rem;
-    
-  }
-
-  
-}
-
-@media (max-width: 560px) {
-  .Gods,
-  .Creatures,
-  .Heroes,
-  .gods-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gods-row {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .god,
-  .gods,
-  .creature,
-  .heros {
-    width: min(90%, 300px);
-  }
-}
-
-#quiz {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--color-gold);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 #personalityquiz {
     /*display: grid;
@@ -6415,3 +6254,156 @@ img.hover-shadow {
   
 }
 
+
+.media-section > .fun-video,
+.media-section > .map-of-greece {
+  padding: 24px;
+  background: #f2ebdd;
+  border: 1px solid #d6c3a3;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(62, 45, 28, 0.15);
+}
+
+.fun-video::before,
+.map-of-greece::before {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #c58b68;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.fun-video::before {
+  content: "WATCH";
+}
+
+.map-of-greece::before {
+  content: "EXPLORE";
+}
+
+.fun-video video {
+  border: 5px solid #263238;
+  border-radius: 12px;
+  background: #263238;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.map-of-greece img {
+  border: 5px solid #fffaf0;
+  border-radius: 12px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.map-of-greece img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.media-section {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background-color:#F2F2F2;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto 0;
+    padding: 70px 24px;
+    
+}
+
+.fun-video {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.fun-video h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.fun-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.map-of-greece {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.map-of-greece h2 {
+     margin: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.map-of-greece img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+
+.gods {
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 13px 16px;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    aspect-ratio: 18 / 13;
+    object-fit: cover;
+
+
+}
+
+.card figcaption strong {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.card figcaption span {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #999;
+}
