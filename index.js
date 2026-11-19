@@ -87,3 +87,24 @@ if (titleElement && factElement && randFacts.length > 0)
 // }
 
 // add(3, firstName);
+
+
+// To study - JavaScript fetch API - used for requests to a remote server. We get the data (response) and can display info on our site
+
+// function createImage(responseText){
+//     const divvv = document.createElement('div');
+//     document.body.append(divvv);
+//    divvv.innerHTML = responseText;
+//   }
+
+// fetch("https://science.nasa.gov/wp-json/wp/v2/apod-basic")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error(`Request failed: ${response.status}`);
+//     }
+//     return response.json();
+//   })
+//   .then((response) => createImage(response[0].explanation))
+//   .catch((error) => console.error("Could not fetch planets:", error));
+
+  

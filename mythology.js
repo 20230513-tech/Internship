@@ -58,17 +58,25 @@ const quizData = [
     },
 ];
 
+const quiz = document.getElementById("quiz1");
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
+const startButton = document.getElementById("start-quiz");
 //const submitButton = document.getElementById("submit");
 
 let currentQuestion = 0;
 let score = 0;
 
+startButton.addEventListener("click", function() {
+    quiz.hidden = false;
+    startButton.hidden = true;
+    showQuestion();
+});
+
+
 function showQuestion() {
     const question = quizData[currentQuestion];
     questionElement.innerText = question.question;
-
     optionsElement.innerHTML = "";
     question.options.forEach(option => {
         const button = document.createElement("button");
